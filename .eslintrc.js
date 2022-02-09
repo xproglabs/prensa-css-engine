@@ -85,4 +85,4 @@ module.exports = {
       version: 'detect'
     }
   }
-};
+}
