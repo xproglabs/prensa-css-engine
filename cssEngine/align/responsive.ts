@@ -1,8 +1,8 @@
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
-import { parseAlign, parseAlignX, parseAlignY } from './parsers'
 import newMediaQuerie from '../responsiveEngine/mediaquerie'
+import { parseAlign, parseAlignX, parseAlignY } from './parsers'
 
 export function alignResponsive(align, alignx, aligny, theme) {
 

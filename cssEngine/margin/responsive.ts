@@ -1,8 +1,8 @@
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
-import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 import newMediaQuerie from '../responsiveEngine/mediaquerie'
+import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 
 export function marginResponsive(mt, mr, mb, ml, mx, my, m, theme) {
 
