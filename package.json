@@ -1,6 +1,7 @@
 {
   "name": "@prensa-ds/css-engine",
   "version": "0.0.1",
+  "private": "false",
   "description": "Functions for transforming component props to CSS",
   "peerDependencies": {
     "lodash": "^4.17.19",
