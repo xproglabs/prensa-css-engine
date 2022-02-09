@@ -39,6 +39,11 @@
   "scripts": {
     "eslint": "eslint --ext js,ts,tsx ./",
     "eslint:fix": "eslint --fix --ext js,ts,tsx ./",
-    "build": "rm -rf dist && rollup --config"
+    "build": "rm -rf dist && rollup --config",
+    "prerelease:copyfiles": "cp -rf README.md dist && cp -rf CHANGELOG.md dist && cp -rf package.json dist",
+    "postrelease:copyfiles": "cp -rf dist/package.json . && cp -rf dist/CHANGELOG.md .",
+    "release:local": "npm run build && npm run prerelease:copyfiles && cd dist && npm pack",
+    "cd": "npm run build && npm run prerelease:copyfiles",
+    "semantic-release": "cd dist && semantic-release"
   }
 }
