@@ -1,8 +1,10 @@
 {
   "name": "@prensa-ds/css-engine",
   "version": "0.0.1",
-  "private": "false",
   "description": "Functions for transforming component props to CSS",
+  "main": "cssEngine/index.ts",
+  "author": "xprog",
+  "license": "ISC",
   "peerDependencies": {
     "lodash": "^4.17.19",
     "react": "^17.0.1",
@@ -46,5 +48,16 @@
     "release:local": "npm run build && npm run prerelease:copyfiles && cd dist && npm pack",
     "cd": "npm run build && npm run prerelease:copyfiles",
     "semantic-release": "cd dist && semantic-release"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/xproglabs/prensa-css-engine#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xproglabs/prensa-css-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xproglabs/prensa-css-engine/issues"
   }
 }
