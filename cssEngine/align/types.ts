@@ -1,15 +1,17 @@
-import { ThemeTypes } from 'prensa'
+type AlignTypes = 'row' | 'column'
+type AlignXTypes = 'left' | 'center' | 'right' | 'evenly' | 'between'
+type AlignYTypes = 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
+type ResponsiveAlignTypes = Array<AlignTypes>
+type ResponsiveAlignXTypes = Array<AlignXTypes>
+type ResponsiveAlignYTypes = Array<AlignYTypes>
 
-export type AlignTokens = 'row' | 'column'
-export type AlignXTokens = 'left' | 'center' | 'right' | 'evenly' | 'between'
-export type AlignYTokens = 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
-export type ResponsiveAlignTokens = Array<AlignTokens>
-export type ResponsiveAlignXTokens = Array<AlignXTokens>
-export type ResponsiveAlignYTokens = Array<AlignYTokens>
+export type AlignProps = AlignTypes | ResponsiveAlignTypes
+export type AlignXProps = AlignXTypes | ResponsiveAlignXTypes
+export type AlignYProps = AlignYTypes | ResponsiveAlignYTypes
 
 export type AlignStyledFunctionParam0 = {
-  align?: AlignTokens | ResponsiveAlignTokens;
-  alignx?: AlignXTokens | ResponsiveAlignXTokens;
-  aligny?: AlignYTokens | ResponsiveAlignYTokens;
-  theme?: ThemeTypes;
+  align?: AlignProps;
+  alignx?: AlignXProps;
+  aligny?: AlignYProps;
+  theme?: any;
 }

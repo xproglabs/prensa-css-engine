@@ -1,15 +1,15 @@
-import { ThemeTypes } from 'prensa'
+type PaddingTypes = string | number
+type ResponsivePaddingTypes = PaddingTypes | Array<PaddingTypes>
 
-export type ResponsiveSpacing = Array<string | number>
-export type SpacingType = string | number | ResponsiveSpacing;
+export type PaddingProps = PaddingTypes | ResponsivePaddingTypes
 
 export type PaddingStyledFunctionParam0 = {
-  pt?: SpacingType;
-  pr?: SpacingType;
-  pb?: SpacingType;
-  pl?: SpacingType;
-  px?: SpacingType;
-  py?: SpacingType;
-  p?: SpacingType;
-  theme?: ThemeTypes;
+  pt?: PaddingProps;
+  pr?: PaddingProps;
+  pb?: PaddingProps;
+  pl?: PaddingProps;
+  px?: PaddingProps;
+  py?: PaddingProps;
+  p?: PaddingProps;
+  theme?: any;
 }

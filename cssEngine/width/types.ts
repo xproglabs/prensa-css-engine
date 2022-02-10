@@ -1,9 +1,9 @@
-import { ThemeTypes } from 'prensa'
+type WidthTypes = string | number
+type ResponsiveWidthTypes = WidthTypes | Array<string | number>
 
-export type ResponsiveWidthType = Array<string | number>
-export type WidthType = string | number | ResponsiveWidthType;
+export type WidthProps = WidthTypes | ResponsiveWidthTypes
 
 export type WidthStyledFunctionParam0 = {
-  $width?: WidthType;
-  theme?: ThemeTypes;
+  $width?: WidthProps;
+  theme?: any;
 }

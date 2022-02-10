@@ -1,15 +1,15 @@
-import { ThemeTypes } from 'prensa'
+type MarginTypes = string | number
+type ResponsiveMarginTypes = Array<MarginTypes>
 
-export type ResponsiveSpacing = Array<string | number>
-export type SpacingType = string | number | ResponsiveSpacing;
+export type MarginProps = MarginTypes | ResponsiveMarginTypes
 
 export type MarginStyledFunctionParam0 = {
-  mt?: SpacingType;
-  mr?: SpacingType;
-  mb?: SpacingType;
-  ml?: SpacingType;
-  mx?: SpacingType;
-  my?: SpacingType;
-  m?: SpacingType;
-  theme?: ThemeTypes;
+  mt?: MarginProps;
+  mr?: MarginProps;
+  mb?: MarginProps;
+  ml?: MarginProps;
+  mx?: MarginProps;
+  my?: MarginProps;
+  m?: MarginProps;
+  theme?: any;
 }

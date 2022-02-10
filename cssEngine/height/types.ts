@@ -1,8 +1,9 @@
-import { ThemeTypes } from 'prensa'
+type HeightTypes = string | number
+type ResponsiveTypes = Array<HeightTypes>
 
-export type ResponsiveHeight = Array<string | number> | string | number;
+export type HeightProps = HeightTypes | ResponsiveTypes
 
 export type HeightStyledFunctionParam0 = {
-  $height?: ResponsiveHeight;
-  theme?: ThemeTypes;
+  $height?: HeightProps;
+  theme?: any;
 }
