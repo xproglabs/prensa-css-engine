@@ -1,4 +1,4 @@
-import { MarginTypes } from 'types'
+import { MarginTypes, ThemeTypes } from 'types'
 
 export interface MarginProps {
   mt?: MarginTypes;
@@ -8,4 +8,5 @@ export interface MarginProps {
   mx?: MarginTypes;
   my?: MarginTypes;
   m?: MarginTypes;
+  theme?: ThemeTypes;
 }

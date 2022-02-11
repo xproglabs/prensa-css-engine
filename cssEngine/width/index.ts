@@ -1,6 +1,6 @@
 import { generateWidth } from './parsers'
 import { widthResponsive } from './responsive'
-import { WidthStyledFunctionParam0 } from './types'
+import { WidthProps } from 'props'
 
 /**
  * Prensa Styled System | width
@@ -8,11 +8,11 @@ import { WidthStyledFunctionParam0 } from './types'
  * $width: string | number | Array<string|number>;
  * @returns a string with CSS syntax
  */
-export function width(props: WidthStyledFunctionParam0) {
+export function width(props: WidthProps) {
 
   if (!props) return ''
 
-  const { $width, theme }: WidthStyledFunctionParam0 = props
+  const { $width, theme }: WidthProps = props
   const factor = theme.factors.dimensions
   const styles = []
 

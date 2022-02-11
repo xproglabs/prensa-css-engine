@@ -1,6 +1,6 @@
 import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 import { marginResponsive } from './responsive'
-import { MarginStyledFunctionParam0 } from './types'
+import { MarginProps } from 'props'
 
 /**
  * Prensa Styled System | margin
@@ -11,11 +11,11 @@ import { MarginStyledFunctionParam0 } from './types'
  * ml: string | number | Array<string|number>;
  * @returns a string with CSS syntax
  */
-export function margin(props: MarginStyledFunctionParam0) {
+export function margin(props: MarginProps) {
 
   if (!props) return ''
 
-  const { mt, mr, mb, ml, mx, my, m, theme }: MarginStyledFunctionParam0 = props
+  const { mt, mr, mb, ml, mx, my, m, theme }: MarginProps = props
   const factor = theme.factors.margin
   const styles = []
 

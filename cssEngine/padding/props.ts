@@ -1,4 +1,4 @@
-import { PaddingTypes } from 'types'
+import { PaddingTypes, ThemeTypes } from 'types'
 
 export interface PaddingProps {
   pt?: PaddingTypes;
@@ -8,4 +8,5 @@ export interface PaddingProps {
   px?: PaddingTypes;
   py?: PaddingTypes;
   p?: PaddingTypes;
+  theme?: ThemeTypes;
 }

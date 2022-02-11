@@ -1,6 +1,6 @@
 import { parseAlign, parseAlignX, parseAlignY } from './parsers'
 import { alignResponsive } from './responsive'
-import { AlignStyledFunctionParam0 } from './types'
+import { AlignProps } from 'props'
 
 /**
  * Prensa Styled System | align flex
@@ -10,11 +10,11 @@ import { AlignStyledFunctionParam0 } from './types'
  * aligny: 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
  * @returns a string with CSS syntax
  */
-export function align(props: AlignStyledFunctionParam0) {
+export function align(props: AlignProps) {
 
   if (!props) return ''
 
-  const { align, alignx, aligny, theme }: AlignStyledFunctionParam0 = props
+  const { align, alignx, aligny, theme } = props
   const styles = []
 
   styles.push('display: flex;')
