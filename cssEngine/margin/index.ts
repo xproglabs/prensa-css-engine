@@ -1,6 +1,7 @@
+import { MarginProps } from 'props'
+
 import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 import { marginResponsive } from './responsive'
-import { MarginProps } from 'props'
 
 /**
  * Prensa Styled System | margin

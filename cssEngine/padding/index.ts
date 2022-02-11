@@ -1,6 +1,7 @@
+import { PaddingProps } from 'props'
+
 import { generatePT, generatePR, generatePB, generatePL, generatePX, generatePY, generateP } from './parsers'
 import { paddingResponsive } from './responsive'
-import { PaddingProps } from 'props'
 
 /**
  * Prensa Styled System | padding

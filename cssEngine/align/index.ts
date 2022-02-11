@@ -1,6 +1,7 @@
+import { AlignProps } from 'props'
+
 import { parseAlign, parseAlignX, parseAlignY } from './parsers'
 import { alignResponsive } from './responsive'
-import { AlignProps } from 'props'
 
 /**
  * Prensa Styled System | align flex

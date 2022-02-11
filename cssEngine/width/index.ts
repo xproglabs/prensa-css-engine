@@ -1,6 +1,7 @@
+import { WidthProps } from 'props'
+
 import { generateWidth } from './parsers'
 import { widthResponsive } from './responsive'
-import { WidthProps } from 'props'
 
 /**
  * Prensa Styled System | width
