@@ -12,18 +12,22 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "target": "es5",
-    // "baseUrl": ".",
-    // "paths": {
-    //   "components/*": [
-    //     "responsiveEngine/*"
-    //   ],
-    // }
+    "baseUrl": ".",
+    "paths": {
+      "types": [
+        "cssEngine/types.ts"
+      ],
+      "props": [
+        "cssEngine/props.ts"
+      ]
+    }
   },
   "include": [
-    "cssEngine/**/*"
+    "**/*.ts",
+    "**/*.tsx"
   ],
   "exclude": [
-    "bundleEngine",
+    "dist",
     "node_modules"
   ]
 }

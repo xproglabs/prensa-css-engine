@@ -1,6 +1,7 @@
+import { PaddingProps } from 'props'
+
 import { generatePT, generatePR, generatePB, generatePL, generatePX, generatePY, generateP } from './parsers'
 import { paddingResponsive } from './responsive'
-import { PaddingStyledFunctionParam0 } from './types'
 
 /**
  * Prensa Styled System | padding
@@ -11,11 +12,11 @@ import { PaddingStyledFunctionParam0 } from './types'
  * pl: string | number | Array<string|number>;
  * @returns a string with CSS syntax
  */
-export function padding(props: PaddingStyledFunctionParam0) {
+export function padding(props: PaddingProps) {
 
   if (!props) return ''
 
-  const { pt, pr, pb, pl, px, py, p, theme }: PaddingStyledFunctionParam0 = props
+  const { pt, pr, pb, pl, px, py, p, theme }: PaddingProps = props
   const factor = theme.factors.margin
   const styles = []
 

@@ -1,9 +1,9 @@
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
+import { HeightProps } from 'props'
 
 import { responsiveEngine } from '../responsiveEngine'
 import { parseNumberHeight, parseStringHeight } from './parsers'
-import { HeightStyledFunctionParam0 } from './types'
 
 /**
  * Prensa Styled System | height
@@ -11,7 +11,7 @@ import { HeightStyledFunctionParam0 } from './types'
  * $height: string | number | Array<string | number>;
  * @returns a string with CSS syntax
  */
-export function height(props: HeightStyledFunctionParam0) {
+export function height(props: HeightProps) {
 
   const value = get(props, '$height', undefined)
   const theme = get(props, 'theme', undefined)
