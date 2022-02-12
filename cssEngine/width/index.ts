@@ -1,6 +1,5 @@
-import { WidthProps } from 'props'
-
 import { generateWidth } from './parsers'
+import { WidthProps } from './props'
 import { widthResponsive } from './responsive'
 
 /**

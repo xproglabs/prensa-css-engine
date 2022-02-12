@@ -1,6 +1,5 @@
-import { MarginProps } from 'props'
-
 import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
+import { MarginProps } from './props'
 import { marginResponsive } from './responsive'
 
 /**
