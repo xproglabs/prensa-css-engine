@@ -1,4 +1,4 @@
-import { AlignProps } from '@xprog/css-engine/props'
+import { AlignProps } from '@xprog/prensa-css-engine/props'
 
 import { parseAlign, parseAlignX, parseAlignY } from './parsers'
 import { alignResponsive } from './responsive'

@@ -1,4 +1,4 @@
-import { WidthProps } from '@xprog/css-engine/props'
+import { WidthProps } from '@xprog/prensa-css-engine/props'
 
 import { generateWidth } from './parsers'
 import { widthResponsive } from './responsive'

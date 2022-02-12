@@ -1,4 +1,4 @@
-import { HeightProps } from '@xprog/css-engine/props'
+import { HeightProps } from '@xprog/prensa-css-engine/props'
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
