@@ -1,4 +1,4 @@
-import { AlignTypes, AlignXTypes, AlignYTypes, ThemeTypes } from '../types'
+import { AlignTypes, AlignXTypes, AlignYTypes, ThemeTypes } from 'types'
 export interface AlignProps {
   align?: AlignTypes;
   alignx?: AlignXTypes;

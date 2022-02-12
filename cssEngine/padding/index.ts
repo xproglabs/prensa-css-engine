@@ -1,5 +1,6 @@
+import { PaddingProps } from 'props'
+
 import { generatePT, generatePR, generatePB, generatePL, generatePX, generatePY, generateP } from './parsers'
-import { PaddingProps } from './props'
 import { paddingResponsive } from './responsive'
 
 /**

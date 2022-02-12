@@ -1,4 +1,4 @@
-import { PaddingTypes, ThemeTypes } from '../types'
+import { PaddingTypes, ThemeTypes } from 'types'
 
 export interface PaddingProps {
   pt?: PaddingTypes;
