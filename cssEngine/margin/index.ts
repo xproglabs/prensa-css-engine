@@ -1,4 +1,4 @@
-import { MarginProps } from '@xprog/css-engine/props'
+import { MarginProps } from '@xprog/prensa-css-engine/props'
 
 import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 import { marginResponsive } from './responsive'
