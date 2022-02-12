@@ -1,4 +1,4 @@
-import { ThemeTypes, WidthTypes } from 'types'
+import { ThemeTypes, WidthTypes } from '../types'
 
 export interface WidthProps {
   $width?: WidthTypes;

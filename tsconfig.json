@@ -11,16 +11,7 @@
     "noImplicitAny": false,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "target": "es5",
-    "baseUrl": ".",
-    "paths": {
-      "types": [
-        "cssEngine/types.ts"
-      ],
-      "props": [
-        "cssEngine/props.ts"
-      ]
-    }
+    "target": "es5"
   },
   "include": [
     "**/*.ts",
