@@ -1,4 +1,4 @@
-import { PaddingProps } from 'props'
+import { PaddingProps } from '@xprog/css-engine/props'
 
 import { generatePT, generatePR, generatePB, generatePL, generatePX, generatePY, generateP } from './parsers'
 import { paddingResponsive } from './responsive'

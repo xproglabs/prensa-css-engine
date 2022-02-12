@@ -14,11 +14,8 @@
     "target": "es5",
     "baseUrl": ".",
     "paths": {
-      "types": [
-        "cssEngine/types.ts"
-      ],
-      "props": [
-        "cssEngine/props.ts"
+      "@xprog/css-engine/*": [
+        "cssEngine/*"
       ]
     }
   },
