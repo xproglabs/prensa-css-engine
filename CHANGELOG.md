@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.6...v1.0.7) (2022-02-12)
+
+
+### Bug Fixes
+
+* Remove paths absolutos ([0dda761](https://github.com/xproglabs/prensa-css-engine/commit/0dda761dd30678703d1647d3b27b4c9f5fbb57b0))
+
 ## [1.0.6](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.5...v1.0.6) (2022-02-11)
 
 
