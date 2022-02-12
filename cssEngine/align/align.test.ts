@@ -9,11 +9,10 @@ describe('align styled function (align | alignx | aligny)', () => {
         alignx: 'between',
         aligny: 'bottom'
       })
-    )
-    .toBe(
+    ).toBe(
       'display:flex;flex-direction:column;justify-content:space-between;justify-content:flex-end;'
-    );
-  });
+    )
+  })
 
   test('row left top', () => {
     expect(
@@ -22,10 +21,9 @@ describe('align styled function (align | alignx | aligny)', () => {
         alignx: 'left',
         aligny: 'top'
       })
-    )
-    .toBe(
+    ).toBe(
       'display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;'
-    );
-  });
+    )
+  })
 
 })
