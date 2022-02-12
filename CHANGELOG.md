@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.8...v1.0.9) (2022-02-12)
+
+
+### Bug Fixes
+
+* Corrige path absoluto para @xprog/prensa-css-engine ([b36d32a](https://github.com/xproglabs/prensa-css-engine/commit/b36d32ad0102e9fc7c74f8a529507d0e843ccb93))
+
 ## [1.0.8](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.7...v1.0.8) (2022-02-12)
 
 
