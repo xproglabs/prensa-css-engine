@@ -1,4 +1,4 @@
-import { PaddingTypes, ThemeTypes } from '../types'
+import { PaddingTypes, ThemeTypes } from '@xprog/css-engine/types'
 
 export interface PaddingProps {
   pt?: PaddingTypes;

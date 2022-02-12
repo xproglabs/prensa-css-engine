@@ -11,7 +11,13 @@
     "noImplicitAny": false,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "target": "es5"
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@xprog/css-engine/*": [
+        "cssEngine/*"
+      ]
+    }
   },
   "include": [
     "**/*.ts",

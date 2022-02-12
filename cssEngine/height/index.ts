@@ -1,9 +1,9 @@
+import { HeightProps } from '@xprog/css-engine/props'
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
 import { responsiveEngine } from '../responsiveEngine'
 import { parseNumberHeight, parseStringHeight } from './parsers'
-import { HeightProps } from './props'
 
 /**
  * Prensa Styled System | height

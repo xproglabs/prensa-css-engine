@@ -1,4 +1,4 @@
-import { MarginTypes, ThemeTypes } from '../types'
+import { MarginTypes, ThemeTypes } from '@xprog/css-engine/types'
 
 export interface MarginProps {
   mt?: MarginTypes;

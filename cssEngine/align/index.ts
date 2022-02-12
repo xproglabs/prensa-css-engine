@@ -1,6 +1,6 @@
+import { AlignProps } from '@xprog/css-engine/props'
 
 import { parseAlign, parseAlignX, parseAlignY } from './parsers'
-import { AlignProps } from './props'
 import { alignResponsive } from './responsive'
 
 /**
