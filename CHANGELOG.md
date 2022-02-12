@@ -1,3 +1,15 @@
+## [1.0.8](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.7...v1.0.8) (2022-02-12)
+
+
+### Bug Fixes
+
+* Configura novo path @xprog/css-engine ([2713ec4](https://github.com/xproglabs/prensa-css-engine/commit/2713ec4e4f09b2930e5e0740f6a6f38b5a6192fb))
+
+
+### Reverts
+
+* Revert "fix: Remove paths absolutos" ([2536488](https://github.com/xproglabs/prensa-css-engine/commit/2536488a5e589934f40d6a4eba35f89f71de637a))
+
 ## [1.0.7](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.6...v1.0.7) (2022-02-12)
 
 
