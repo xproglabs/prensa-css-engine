@@ -16,6 +16,9 @@
     "paths": {
       "@xprog/prensa-css-engine/*": [
         "cssEngine/*"
+      ],
+      "@prensa_tokens": [
+        "prensa_tokens.d.ts"
       ]
     }
   },
