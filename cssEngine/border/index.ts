@@ -1,5 +1,5 @@
-import get from 'lodash/get'
 import { BorderProps } from '@xprog/prensa-css-engine/props'
+import get from 'lodash/get'
 
 import {
   generateB,
