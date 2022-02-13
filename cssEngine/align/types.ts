@@ -1,3 +1,7 @@
-export type AlignTypes = 'row' | 'column'
-export type AlignXTypes = 'left' | 'center' | 'right' | 'evenly' | 'between'
-export type AlignYTypes = 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
+type AlignValues = 'row' | 'column'
+type AlignXValues = 'left' | 'center' | 'right' | 'evenly' | 'between'
+type AlignYValues = 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
+
+export type AlignTypes = AlignValues | Array<AlignValues>
+export type AlignXTypes = AlignXValues | Array<AlignXValues>
+export type AlignYTypes = AlignYValues | Array<AlignYValues>
