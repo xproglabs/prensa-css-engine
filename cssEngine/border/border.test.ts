@@ -22,9 +22,9 @@ describe('border styled function', () => {
   test('bt', () => {
     expect(
       border({
-        $bt: '2px',
-        $borderColor: 'black',
-        $borderStyle: 'dotted',
+        bt: '2px',
+        borderColor: 'black',
+        borderStyle: 'dotted',
         theme
       })
     ).toBe(
@@ -35,9 +35,9 @@ describe('border styled function', () => {
   test('b', () => {
     expect(
       border({
-        $b: '2px',
-        $borderColor: 'black',
-        $borderStyle: 'dotted',
+        b: '2px',
+        borderColor: 'black',
+        borderStyle: 'dotted',
         theme
       })
     ).toBe(
@@ -48,9 +48,9 @@ describe('border styled function', () => {
   test('bt responsive', () => {
     expect(
       border({
-        $bt: ['1px', '2px'],
-        $borderColor: 'black',
-        $borderStyle: 'dotted',
+        bt: ['1px', '2px'],
+        borderColor: 'black',
+        borderStyle: 'dotted',
         theme
       })
     ).toBe(
@@ -60,9 +60,9 @@ describe('border styled function', () => {
   test('b responsive', () => {
     expect(
       border({
-        $b: ['1px', '2px'],
-        $borderColor: 'black',
-        $borderStyle: 'dotted',
+        b: ['1px', '2px'],
+        borderColor: 'black',
+        borderStyle: 'dotted',
         theme
       })
     ).toBe(
