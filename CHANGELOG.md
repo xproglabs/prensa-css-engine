@@ -1,3 +1,15 @@
+## [1.0.20](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.19...v1.0.20) (2022-02-13)
+
+
+### Bug Fixes
+
+* Remove defaultProps na função border ([41ba20e](https://github.com/xproglabs/prensa-css-engine/commit/41ba20ef6d11f336fdc7368cde6793a57210f092))
+
+
+### Features
+
+* Implementa teste "empty" na função border ([65d7c54](https://github.com/xproglabs/prensa-css-engine/commit/65d7c54cae60979d67f633c3ca8f851ac9169625))
+
 ## [1.0.19](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.18...v1.0.19) (2022-02-13)
 
 
