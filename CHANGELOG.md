@@ -1,3 +1,17 @@
+## [1.0.12](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.11...v1.0.12) (2022-02-13)
+
+
+### Bug Fixes
+
+* Corrige outputs css da função color ([d0e44cc](https://github.com/xproglabs/prensa-css-engine/commit/d0e44ccafe997fd1122836de285f3a8a9a54bccf))
+
+
+### Features
+
+* Implementa propriedade colors no type base Theme ([4a07397](https://github.com/xproglabs/prensa-css-engine/commit/4a073974e14dda8292aa1a1b2f35afd20bea43fb))
+* Implementa suite de testes para a função color ([338874a](https://github.com/xproglabs/prensa-css-engine/commit/338874ad61ed29d5e6439d5cf556845bda5fad5d))
+* Implementa type responsivo na função color ([dc75b2b](https://github.com/xproglabs/prensa-css-engine/commit/dc75b2b0a21da3642c740be600c3f738434a6ef4))
+
 ## [1.0.11](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.10...v1.0.11) (2022-02-12)
 
 
