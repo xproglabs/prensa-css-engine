@@ -4,6 +4,7 @@ export * from './color/types'
 export * from './height/types'
 export * from './margin/types'
 export * from './padding/types'
+export * from './radius/types'
 export * from './width/types'
 
 export type ThemeTypes = {
