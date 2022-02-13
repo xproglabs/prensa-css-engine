@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.13...v1.0.14) (2022-02-13)
+
+
+### Bug Fixes
+
+* Corrige nome dos arquivos na bundle final ([4f0b093](https://github.com/xproglabs/prensa-css-engine/commit/4f0b093dfa0a700529d978182d969d9e6b7020d4))
+
 ## [1.0.13](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.12...v1.0.13) (2022-02-13)
 
 
