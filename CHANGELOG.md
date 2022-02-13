@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.18...v1.0.19) (2022-02-13)
+
+
+### Bug Fixes
+
+* Remove prefixo $ na função border ([0047fc1](https://github.com/xproglabs/prensa-css-engine/commit/0047fc184daca04a9b13aebc1701f642d88a0a6e))
+
 ## [1.0.18](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.17...v1.0.18) (2022-02-13)
 
 
