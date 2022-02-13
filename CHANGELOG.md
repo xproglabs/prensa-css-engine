@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.15...v1.0.16) (2022-02-13)
+
+
+### Bug Fixes
+
+* Corrige types responsivos na função align ([9c02e27](https://github.com/xproglabs/prensa-css-engine/commit/9c02e27426bb366275baf9398c629c49026f13c4))
+
 ## [1.0.15](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.14...v1.0.15) (2022-02-13)
 
 
