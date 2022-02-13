@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.17...v1.0.18) (2022-02-13)
+
+
+### Features
+
+* Desenvolve função estilizada radius ([85cb8ee](https://github.com/xproglabs/prensa-css-engine/commit/85cb8ee2ac9bc50afca5804935821ce455458a93))
+
 ## [1.0.17](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.16...v1.0.17) (2022-02-13)
 
 
