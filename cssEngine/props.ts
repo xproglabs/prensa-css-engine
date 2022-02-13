@@ -1,4 +1,5 @@
 export * from './align/props'
+export * from './border/props'
 export * from './color/props'
 export * from './height/props'
 export * from './margin/props'
