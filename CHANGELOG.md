@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.12...v1.0.13) (2022-02-13)
+
+
+### Bug Fixes
+
+* Adiciona função color nos exports ([1f95c09](https://github.com/xproglabs/prensa-css-engine/commit/1f95c097dd338c68c626ac8a870adf97152d207d))
+
 ## [1.0.12](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.11...v1.0.12) (2022-02-13)
 
 
