@@ -8,5 +8,6 @@ export default [
   createBundle('cssEngine/height/index.ts', 'dist/height/index', 'height'),
   createBundle('cssEngine/margin/index.ts', 'dist/margin/index', 'margin'),
   createBundle('cssEngine/padding/index.ts', 'dist/padding/index', 'padding'),
-  createBundle('cssEngine/width/index.ts', 'dist/width/index', 'width'),
+  createBundle('cssEngine/radius/index.ts', 'dist/radius/index', 'radius'),
+  createBundle('cssEngine/width/index.ts', 'dist/width/index', 'width')
 ]
