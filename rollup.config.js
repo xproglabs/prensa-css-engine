@@ -2,6 +2,7 @@ import createBundle from './bundleEngine/bundleGenerator'
 
 export default [
   createBundle('cssEngine/align/index.ts', 'dist/align/index', 'align'),
+  createBundle('cssEngine/border/index.ts', 'dist/border/index', 'border'),
   createBundle('cssEngine/boxShadow/index.ts', 'dist/boxShadow/index', 'boxShadow'),
   createBundle('cssEngine/color/index.ts', 'dist/color/index', 'color'),
   createBundle('cssEngine/height/index.ts', 'dist/height/index', 'height'),
@@ -9,4 +10,3 @@ export default [
   createBundle('cssEngine/padding/index.ts', 'dist/padding/index', 'padding'),
   createBundle('cssEngine/width/index.ts', 'dist/width/index', 'width'),
 ]
-  

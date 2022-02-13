@@ -1,0 +1,1 @@
+export type BorderTypes = string | number | Array<string | number>

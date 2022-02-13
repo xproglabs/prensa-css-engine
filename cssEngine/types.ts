@@ -1,4 +1,5 @@
 export * from './align/types'
+export * from './border/types'
 export * from './color/types'
 export * from './height/types'
 export * from './margin/types'
