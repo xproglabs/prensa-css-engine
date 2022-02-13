@@ -1,6 +1,4 @@
-import { ThemeTypes } from '@xprog/prensa-css-engine/types'
-
-import { ColorTypes } from './types'
+import { ColorTypes, ThemeTypes } from '@xprog/prensa-css-engine/types'
 
 export interface ColorProps {
   $color?: ColorTypes;
