@@ -31,15 +31,15 @@ import { borderResponsive } from './responsive'
 export function border(props: BorderProps) {
 
   const {
-    b = '',
-    bt = '',
-    br = '',
-    bb = '',
-    bl = '',
-    bx = '',
-    by = '',
-    borderColor = 'black',
-    borderStyle = 'solid',
+    b,
+    bt,
+    br,
+    bb,
+    bl,
+    bx,
+    by,
+    borderColor,
+    borderStyle,
     theme
   } = props
 
