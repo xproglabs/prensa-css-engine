@@ -13,24 +13,32 @@ export function colorResponsive(color, bgColor, theme) {
   const tabletStyles = []
   const desktopStyles = []
 
+  const color0 = get(color, '0', '')
+  const color1 = get(color, '1', '')
+  const color2 = get(color, '2', '')
+
+  const bgColor0 = get(bgColor, '0', '')
+  const bgColor1 = get(bgColor, '1', '')
+  const bgColor2 = get(bgColor, '2', '')
+
   if (isArray(color) && color.length === 2) {
-    mobileStyles.push(findColorValue(color[0], theme))
-    desktopStyles.push(findColorValue(color[1], theme))
+    mobileStyles.push(`color:${findColorValue(color0, theme)};`)
+    desktopStyles.push(`color:${findColorValue(color1, theme)};`)
   }
   if (isArray(color) && color.length === 3) {
-    mobileStyles.push(findColorValue(color[0], theme))
-    tabletStyles.push(findColorValue(color[1], theme))
-    desktopStyles.push(findColorValue(color[2], theme))
+    mobileStyles.push(`color:${findColorValue(color0, theme)};`)
+    tabletStyles.push(`color:${findColorValue(color1, theme)};`)
+    desktopStyles.push(`color:${findColorValue(color2, theme)};`)
   }
 
   if (isArray(bgColor) && bgColor.length === 2) {
-    mobileStyles.push(findColorValue(color[0], theme))
-    desktopStyles.push(findColorValue(color[1], theme))
+    mobileStyles.push(`background-color:${findColorValue(bgColor0, theme)};`)
+    desktopStyles.push(`background-color:${findColorValue(bgColor1, theme)};`)
   }
   if (isArray(bgColor) && bgColor.length === 3) {
-    mobileStyles.push(findColorValue(bgColor[0], theme))
-    tabletStyles.push(findColorValue(bgColor[1], theme))
-    desktopStyles.push(findColorValue(bgColor[2], theme))
+    mobileStyles.push(`background-color:${findColorValue(bgColor0, theme)};`)
+    tabletStyles.push(`background-color:${findColorValue(bgColor1, theme)};`)
+    desktopStyles.push(`background-color:${findColorValue(bgColor2, theme)};`)
   }
 
   styles.push(
