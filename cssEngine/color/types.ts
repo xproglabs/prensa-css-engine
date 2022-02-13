@@ -1,3 +1,3 @@
 import { ColorTokens } from '@prensa_tokens'
 
-export type ColorTypes = ColorTokens
+export type ColorTypes = ColorTokens | Array<ColorTokens>
