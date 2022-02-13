@@ -19,6 +19,14 @@ const theme = {
 }
 
 describe('border styled function', () => {
+  test('empty', () => {
+    expect(
+      border({})
+    ).toBe(
+      ''
+    )
+  })
+
   test('bt', () => {
     expect(
       border({
