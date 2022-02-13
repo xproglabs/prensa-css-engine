@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.14...v1.0.15) (2022-02-13)
+
+
+### Features
+
+* Cria bundle para a função color ([bb710cd](https://github.com/xproglabs/prensa-css-engine/commit/bb710cdc1dfc54063ab655590e5662148d727432))
+
 ## [1.0.14](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.13...v1.0.14) (2022-02-13)
 
 
