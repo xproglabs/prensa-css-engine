@@ -5,6 +5,7 @@ export * from './padding/types'
 export * from './width/types'
 
 export type ThemeTypes = {
+  colors?: any;
   factors?: any;
   fonts?: any;
   icons?: any;

@@ -16,13 +16,13 @@ export function color({ $color, $bgColor, theme }: ColorProps) {
 
   if (typeof $color === 'string') {
     if (selectedColor !== '') {
-      css.push($color)
+      css.push(`color:${selectedColor};`)
     }
   }
 
   if (typeof $bgColor === 'string') {
     if (selectedBgColor !== '') {
-      css.push($bgColor)
+      css.push(`background-color:${selectedBgColor};`)
     }
   }
 
