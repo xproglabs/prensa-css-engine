@@ -35,5 +35,5 @@ export function align(props: AlignProps) {
     )
   )
 
-  return styles.join('')
+  return styles.join('').replace(/\s+/g, '')
 }

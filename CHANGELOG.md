@@ -1,3 +1,22 @@
+## [1.0.11](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.10...v1.0.11) (2022-02-12)
+
+
+### Features
+
+* configura preset Jest no babel ([605a733](https://github.com/xproglabs/prensa-css-engine/commit/605a73322485a9077c629da19264f47fde4862ef))
+* Implementa filtro de espaçamentos no "output" da função align ([8f9c3b4](https://github.com/xproglabs/prensa-css-engine/commit/8f9c3b453fb23ce8b71f59bca9812c3fe37479c7))
+* Implementa primeira suite de teste no align ([068b143](https://github.com/xproglabs/prensa-css-engine/commit/068b143e693f176753c0e59b46936c88eb9962a0))
+* Instala novas dependências para os testes unitários ([cb13d07](https://github.com/xproglabs/prensa-css-engine/commit/cb13d070a662779fef35b59caff6e6ccbe6c3277))
+
+## [1.0.10](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.9...v1.0.10) (2022-02-12)
+
+
+### Features
+
+* Configura prensa_tokens.d.ts no projeto ([20151d2](https://github.com/xproglabs/prensa-css-engine/commit/20151d2fec169297a61da439a5d10d3acb02a803))
+* Instala types para os pacotes lodash e react ([fece39f](https://github.com/xproglabs/prensa-css-engine/commit/fece39f9b7ea77612cd70bbcc60335984dbc9d65))
+* Nova função estilizada color (color e bgColor) ([2468a6c](https://github.com/xproglabs/prensa-css-engine/commit/2468a6c594b8d40518c8aa0942d1aa59c6fb5ec3))
+
 ## [1.0.9](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.8...v1.0.9) (2022-02-12)
 
 
