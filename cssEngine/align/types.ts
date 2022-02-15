@@ -1,4 +1,4 @@
-type AlignValues = 'row' | 'column'
+type AlignValues = 'column' | 'column-reverse' | 'row' | 'row-reverse'
 type AlignXValues = 'left' | 'center' | 'right' | 'evenly' | 'between'
 type AlignYValues = 'top' | 'middle' | 'bottom' | 'evenly' | 'between'
 
