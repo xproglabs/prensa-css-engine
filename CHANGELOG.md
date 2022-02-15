@@ -1,3 +1,10 @@
+## [1.0.26](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.25...v1.0.26) (2022-02-15)
+
+
+### Bug Fixes
+
+* Adiciona escape com retorno vazio na função customCSS ([1e4a832](https://github.com/xproglabs/prensa-css-engine/commit/1e4a83278e0519bb3e91b4d3c45ab9da0d1fa8dd))
+
 ## [1.0.25](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.24...v1.0.25) (2022-02-15)
 
 
