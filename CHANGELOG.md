@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.21...v1.0.22) (2022-02-15)
+
+
+### Features
+
+* Adiciona nova bundle para a função estilizada maxAndMin ([06da00b](https://github.com/xproglabs/prensa-css-engine/commit/06da00b6fb4f3dbe60874085b6fa91657559042e))
+
 ## [1.0.21](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.20...v1.0.21) (2022-02-15)
 
 
