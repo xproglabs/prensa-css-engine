@@ -1,3 +1,10 @@
+## [1.0.24](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.23...v1.0.24) (2022-02-15)
+
+
+### Features
+
+* Otimiza função boxShadow ([fdcaeef](https://github.com/xproglabs/prensa-css-engine/commit/fdcaeefb13d69c045698d2825b9563451d66cc22))
+
 ## [1.0.23](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.22...v1.0.23) (2022-02-15)
 
 
