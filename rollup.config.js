@@ -5,6 +5,7 @@ export default [
   createBundle('cssEngine/border/index.ts', 'dist/border/index', 'border'),
   createBundle('cssEngine/boxShadow/index.ts', 'dist/boxShadow/index', 'boxShadow'),
   createBundle('cssEngine/color/index.ts', 'dist/color/index', 'color'),
+  createBundle('cssEngine/customCSS/index.ts', 'dist/customCSS/index', 'customCSS'),
   createBundle('cssEngine/height/index.ts', 'dist/height/index', 'height'),
   createBundle('cssEngine/margin/index.ts', 'dist/margin/index', 'margin'),
   createBundle('cssEngine/maxAndMin/index.ts', 'dist/maxAndMin/index', 'maxAndMin'),
