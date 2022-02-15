@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.20...v1.0.21) (2022-02-15)
+
+
+### Features
+
+* Desenvolve função maxAndMin ([a642ccf](https://github.com/xproglabs/prensa-css-engine/commit/a642ccf475b57b9c7505b6d3ff3cfc298a05ef24))
+
 ## [1.0.20](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.19...v1.0.20) (2022-02-13)
 
 
