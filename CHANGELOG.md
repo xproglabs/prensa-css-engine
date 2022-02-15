@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.24...v1.0.25) (2022-02-15)
+
+
+### Features
+
+* Desenvolve função estilizada customCSS ([9258e6f](https://github.com/xproglabs/prensa-css-engine/commit/9258e6f46dd146e9d3051547d711ba93fc596522))
+
 ## [1.0.24](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.23...v1.0.24) (2022-02-15)
 
 
