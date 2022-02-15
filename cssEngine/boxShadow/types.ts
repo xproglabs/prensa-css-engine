@@ -1,0 +1,1 @@
+export type BoxShadowTypes = string | Array<string>;
