@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.22...v1.0.23) (2022-02-15)
+
+
+### Features
+
+* Adiciona novos valores no type AlignValues ([4610f00](https://github.com/xproglabs/prensa-css-engine/commit/4610f0072a2d9b9ba1c10e649286f0ccebf31fe0))
+
 ## [1.0.22](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.21...v1.0.22) (2022-02-15)
 
 
