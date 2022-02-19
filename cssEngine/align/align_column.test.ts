@@ -107,17 +107,4 @@ describe('align column suite', () => {
     )
   })
 
-  // test('align responsive', () => {
-  //   expect(
-  //     align({
-  //       align: ['column', 'row'],
-  //       alignx: ['left', 'center'],
-  //       aligny: ['top', 'bottom'],
-  //       theme
-  //     })
-  //   ).toBe(
-  //     ''
-  //   )
-  // })
-
 })
