@@ -4,7 +4,7 @@ export function parseAlignX(align, alignx) {
   let alignItems = ''
   let justifyContent = ''
 
-  if (align === 'column') {
+  if (align === 'column' || align === 'column-reverse') {
     if (alignx === 'left') alignItems = 'flex-start'
     if (alignx === 'center') alignItems = 'center'
     if (alignx === 'right') alignItems = 'flex-end'
@@ -12,8 +12,8 @@ export function parseAlignX(align, alignx) {
     if (alignx === 'between') justifyContent = 'space-between'
   }
 
-  if (align === 'row') {
-    if (alignx === 'left') alignItems = 'flex-start'
+  if (align === 'row' || align === 'row-reverse') {
+    if (alignx === 'left') justifyContent = 'flex-start'
     if (alignx === 'center') justifyContent = 'center'
     if (alignx === 'right') justifyContent = 'flex-end'
     if (alignx === 'evenly') justifyContent = 'space-evenly'
@@ -32,18 +32,18 @@ export function parseAlignY(align, aligny) {
   let alignItems = ''
   let justifyContent = ''
 
-  if (align === 'row') {
-    if (aligny === 'top') alignItems = 'flex-start'
-    if (aligny === 'middle') alignItems = 'center'
-    if (aligny === 'bottom') alignItems = 'flex-end'
+  if (align === 'column' || align === 'column-reverse') {
+    if (aligny === 'top') justifyContent = 'flex-start'
+    if (aligny === 'middle') justifyContent = 'center'
+    if (aligny === 'bottom') justifyContent = 'flex-end'
     if (aligny === 'evenly') justifyContent = 'space-evenly'
     if (aligny === 'between') justifyContent = 'space-between'
   }
 
-  if (align === 'column') {
-    if (aligny === 'top') justifyContent = 'flex-start'
-    if (aligny === 'middle') justifyContent = 'center'
-    if (aligny === 'bottom') justifyContent = 'flex-end'
+  if (align === 'row' || align === 'row-reverse') {
+    if (aligny === 'top') alignItems = 'flex-start'
+    if (aligny === 'middle') alignItems = 'center'
+    if (aligny === 'bottom') alignItems = 'flex-end'
     if (aligny === 'evenly') justifyContent = 'space-evenly'
     if (aligny === 'between') justifyContent = 'space-between'
   }
@@ -61,8 +61,14 @@ export function parseAlign(align) {
   if (align === 'row') {
     flexDirection = 'row'
   }
+  if (align === 'row-reverse') {
+    flexDirection = 'row-reverse'
+  }
   if (align === 'column') {
     flexDirection = 'column'
+  }
+  if (align === 'column-reverse') {
+    flexDirection = 'column-reverse'
   }
 
   flexDirection !== '' && styles.push(`flex-direction: ${flexDirection};`)

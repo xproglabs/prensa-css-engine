@@ -1,4 +1,4 @@
-name: prensa-css-engine ci
+name: prensa-css-engine CI
 on: [push]
 
 jobs:
@@ -17,6 +17,9 @@ jobs:
 
       - name: pkg build
         run: npm run build
+
+      - name: pkg test
+        run: npm run test
 
       - name: pkg lint
         run: npm run eslint

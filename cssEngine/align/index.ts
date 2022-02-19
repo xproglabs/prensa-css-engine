@@ -18,13 +18,21 @@ export function align(props: AlignProps) {
   const { align, alignx, aligny, theme } = props
   const styles = []
 
-  styles.push('display: flex;')
-
   styles.push(
-    typeof align === 'string' ? parseAlign(align) : '',
-    typeof alignx === 'string' ? parseAlignX(align, alignx) : '',
-    typeof aligny === 'string' ? parseAlignY(align, aligny) : ''
+    'display: flex;'
   )
+
+  if (typeof align === 'string') {
+    styles.push(
+      parseAlign(align)
+    )
+    styles.push(
+      parseAlignX(align, alignx)
+    )
+    styles.push(
+      parseAlignY(align, aligny)
+    )
+  }
 
   styles.push(
     alignResponsive(
