@@ -1,3 +1,19 @@
+## [1.0.27](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.26...v1.0.27) (2022-02-19)
+
+
+### Bug Fixes
+
+* Condiciona execução das funções a um type string em align + alignx + aligny ([9333039](https://github.com/xproglabs/prensa-css-engine/commit/9333039b3975c5c97dbe797b8051ecc9ebd19aa4))
+
+
+### Features
+
+* Adiciona row-reverse/column-reverse e corrige lógica incorreta para "row left" ([e9d50ad](https://github.com/xproglabs/prensa-css-engine/commit/e9d50adfe16bfa91874e7208cdf0c42afc3c1692))
+* Adiciona testes "row between" e "row evenly" ([77438f2](https://github.com/xproglabs/prensa-css-engine/commit/77438f2eac4879c821231a45427e8c4f4c5e884d))
+* Ativa script para testes unitários no CI ([965b0e3](https://github.com/xproglabs/prensa-css-engine/commit/965b0e375e4452d98e8882afda84e28d4e6339e2))
+* Implementa função responsiva ([1f8cd29](https://github.com/xproglabs/prensa-css-engine/commit/1f8cd295c3061c19f2a83f930fc7f8ae8aac0e36))
+* Implementa testes unitários para a função align ([c46ab7d](https://github.com/xproglabs/prensa-css-engine/commit/c46ab7d8930ed6df368ea0a2fcdf92dd6b68e537))
+
 ## [1.0.26](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.25...v1.0.26) (2022-02-15)
 
 
