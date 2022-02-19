@@ -107,17 +107,74 @@ describe('align row suite', () => {
     )
   })
 
-  // test('align responsive', () => {
-  //   expect(
-  //     align({
-  //       align: ['column', 'row'],
-  //       alignx: ['left', 'center'],
-  //       aligny: ['top', 'bottom'],
-  //       theme
-  //     })
-  //   ).toBe(
-  //     ''
-  //   )
-  // })
+  //row between
+  test('row between top', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'between',
+        aligny: 'top'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-between;align-items:flex-start;'
+    )
+  })
+  test('row between middle', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'between',
+        aligny: 'middle'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-between;align-items:center;'
+    )
+  })
+  test('row between bottom', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'between',
+        aligny: 'bottom'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;'
+    )
+  })
+
+  //row evenly
+  test('row evenly top', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'evenly',
+        aligny: 'top'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-evenly;align-items:flex-start;'
+    )
+  })
+  test('row between middle', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'evenly',
+        aligny: 'middle'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;'
+    )
+  })
+  test('row between bottom', () => {
+    expect(
+      align({
+        align: 'row',
+        alignx: 'evenly',
+        aligny: 'bottom'
+      })
+    ).toBe(
+      'display:flex;flex-direction:row;justify-content:space-evenly;align-items:flex-end;'
+    )
+  })
 
 })
