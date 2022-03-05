@@ -2,8 +2,8 @@ import { HeightProps } from '@xprog/prensa-css-engine/props'
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
-import { responsiveEngine } from '../responsiveEngine'
-import { parseNumberHeight, parseStringHeight } from './parsers'
+import { createResponsiveStyle } from '../responsiveEngine'
+import { generateHeight } from './parsers'
 
 /**
  * Prensa Styled System | height
@@ -13,22 +13,25 @@ import { parseNumberHeight, parseStringHeight } from './parsers'
  */
 export function height(props: HeightProps) {
 
-  const value = get(props, '$height', undefined)
-  const theme = get(props, 'theme', undefined)
-  const factor = get(theme, 'factors.dimensions', undefined)
+  if (!props) return ''
 
-  if (typeof value === 'string') {
-    return parseStringHeight(value)
+  const { $height, theme }: HeightProps = props
+  const factor = get(theme, 'factors.dimensions', 1)
+  const styles = []
+
+  if (isArray($height)) {
+    styles.push(
+      createResponsiveStyle(
+        $height,
+        value => generateHeight(value, factor),
+        theme
+      )
+    )
+  } else {
+    styles.push(
+      generateHeight($height, factor)
+    )
   }
 
-  if (typeof value === 'number') {
-    return parseNumberHeight(value, factor)
-  }
-
-  if (isArray(value)) {
-    return responsiveEngine(value, theme, {
-      string: parseStringHeight,
-      number: parseNumberHeight
-    })
-  }
+  return styles.join('')
 }

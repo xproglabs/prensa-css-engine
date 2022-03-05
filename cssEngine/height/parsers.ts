@@ -1,7 +1,8 @@
-export function parseStringHeight(value) {
-  return `height: ${value};`
-}
-
-export function parseNumberHeight(value, factor) {
-  return `height: ${value * factor};`
+export function generateHeight(value, factor) {
+  if (typeof value === 'string') {
+    return `height:${value};`
+  }
+  if (typeof value === 'number') {
+    return `height:${value * factor};`
+  }
 }
