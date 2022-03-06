@@ -1,7 +1,8 @@
 import { AlignProps } from '@xprog/prensa-css-engine/props'
+import isArray from 'lodash/isArray'
 
+import { createResponsiveStyle } from '../responsiveEngine'
 import { parseAlign, parseAlignX, parseAlignY } from './parsers'
-import { alignResponsive } from './responsive'
 
 /**
  * Prensa Styled System | align flex
@@ -22,26 +23,51 @@ export function align(props: AlignProps) {
     'display: flex;'
   )
 
+  function alignHelper(value) {
+    if (typeof value === 'string') {
+      return value
+    } else {
+      return value[0]
+    }
+  }
+
   if (typeof align === 'string') {
     styles.push(
       parseAlign(align)
     )
+  }
+  if (typeof alignx === 'string') {
     styles.push(
-      parseAlignX(align, alignx)
+      parseAlignX(
+        alignHelper(align),
+        alignx
+      )
     )
+  }
+  if (typeof aligny === 'string') {
     styles.push(
-      parseAlignY(align, aligny)
+      parseAlignY(
+        alignHelper(align),
+        aligny
+      )
     )
   }
 
-  styles.push(
-    alignResponsive(
-      align,
-      alignx,
-      aligny,
-      theme
+  function alignResponsiveHelper(pos) {
+    if (align[pos]) {
+      return `${parseAlign(align[pos])}${parseAlignX(align[pos], alignx[pos])}${parseAlignY(align[pos], aligny[pos])}`
+    }
+  }
+
+  if (isArray(align)) {
+    styles.push(
+      createResponsiveStyle(
+        align,
+        pos => alignResponsiveHelper(pos),
+        theme
+      )
     )
-  )
+  } 
 
   return styles.join('').replace(/\s+/g, '')
 }
