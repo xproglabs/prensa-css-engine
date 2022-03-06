@@ -1,8 +1,10 @@
+import get from 'lodash/get'
+
 import newMediaQuerie from './mediaquerie'
 
 export function createResponsiveStyle(value, parser, theme) {
 
-  const queries = theme.queries
+  const queries = get(theme, 'queries', {})
   const responsiveModel = value.length
   const styles = []
   const xs = []
@@ -12,62 +14,62 @@ export function createResponsiveStyle(value, parser, theme) {
   const xl = []
 
   styles.push(
-    parser(value[0])
+    parser(0)
   )
 
   if (responsiveModel === 1) {
     xs.push(
-      parser(value[0])
+      parser(0)
     )
   }
   if (responsiveModel === 2) {
     sm.push(
-      parser(value[0])
+      parser(0)
     )
     lg.push(
-      parser(value[1])
+      parser(1)
     )
   }
   if (responsiveModel === 3) {
     sm.push(
-      parser(value[0])
+      parser(0)
     )
     md.push(
-      parser(value[1])
+      parser(1)
     )
     lg.push(
-      parser(value[2])
+      parser(2)
     )
   }
   if (responsiveModel === 4) {
     xs.push(
-      parser(value[0])
+      parser(0)
     )
     sm.push(
-      parser(value[1])
+      parser(1)
     )
     md.push(
-      parser(value[2])
+      parser(2)
     )
     lg.push(
-      parser(value[3])
+      parser(3)
     )
   }
   if (responsiveModel === 5) {
     xs.push(
-      parser(value[0])
+      parser(0)
     )
     sm.push(
-      parser(value[1])
+      parser(1)
     )
     md.push(
-      parser(value[2])
+      parser(2)
     )
     lg.push(
-      parser(value[3])
+      parser(3)
     )
     xl.push(
-      parser(value[4])
+      parser(4)
     )
   }
 
