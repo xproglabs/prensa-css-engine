@@ -23,7 +23,7 @@ export function width(props: WidthProps) {
     styles.push(
       createResponsiveStyle(
         $width,
-        (value) => generateWidth(value, factor),
+        pos => generateWidth($width[pos], factor),
         theme
       )
     )

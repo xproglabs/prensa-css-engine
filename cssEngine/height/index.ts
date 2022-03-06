@@ -23,7 +23,7 @@ export function height(props: HeightProps) {
     styles.push(
       createResponsiveStyle(
         $height,
-        value => generateHeight(value, factor),
+        pos => generateHeight($height[pos], factor),
         theme
       )
     )
