@@ -1,7 +1,8 @@
 import { BoxShadowProps } from '@xprog/prensa-css-engine/props'
+import isArray from 'lodash/isArray'
 
+import { createResponsiveStyle } from '../responsiveEngine'
 import { generateBoxShadow } from './parsers'
-import { boxShadowResponsive } from './responsive'
 
 /**
  * Prensa Styled System | boxShadow
@@ -16,16 +17,19 @@ export function boxShadow(props: BoxShadowProps) {
   const { boxShadow, theme } = props
   const styles = []
 
-  styles.push(
-    typeof boxShadow === 'string' ? generateBoxShadow(boxShadow) : '',
-  )
-
-  styles.push(
-    boxShadowResponsive(
-      boxShadow,
-      theme
+  if (isArray(boxShadow)) {
+    styles.push(
+      createResponsiveStyle(
+        boxShadow,
+        pos => generateBoxShadow(boxShadow[pos]),
+        theme
+      )
     )
-  )
+  } else {
+    styles.push(
+      generateBoxShadow(boxShadow)
+    )
+  }
 
   return styles.join('').replace(/\s+/g, '')
 }
