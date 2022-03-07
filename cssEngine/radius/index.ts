@@ -1,13 +1,22 @@
 import { RadiusProps } from '@xprog/prensa-css-engine/props'
+import isArray from 'lodash/isArray'
 
+import { createResponsiveStyle } from '../responsiveEngine'
 import { generateBorderRadius } from './parsers'
-import { radiusResponsive } from './responsive'
 
 export function radius({ $radius, theme }: RadiusProps) {
 
   const styles = []
 
-  if ($radius) {
+  if (isArray($radius)) {
+    styles.push(
+      createResponsiveStyle(
+        $radius,
+        pos => generateBorderRadius($radius[pos], theme),
+        theme
+      )
+    )
+  } else {
     styles.push(
       generateBorderRadius(
         $radius,
@@ -15,13 +24,6 @@ export function radius({ $radius, theme }: RadiusProps) {
       )
     )
   }
-
-  styles.push(
-    radiusResponsive(
-      $radius,
-      theme
-    )
-  )
 
   return styles.join('')
 }
