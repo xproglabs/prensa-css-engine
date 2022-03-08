@@ -1,5 +1,4 @@
 import { ColorProps } from '@xprog/prensa-css-engine/props'
-import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
 import { createResponsiveStyle } from '../responsiveEngine'
@@ -13,8 +12,6 @@ import { generateBackgroundColor, generateColor } from './parsers'
 export function color({ $color, $bgColor, theme }: ColorProps) {
 
   const css = []
-  const selectedColor = get(theme, `colors.${$color}`, '')
-  const selectedBgColor = get(theme, `colors.${$bgColor}`, '')
 
   if (isArray($color)) {
     css.push(
@@ -25,10 +22,10 @@ export function color({ $color, $bgColor, theme }: ColorProps) {
       )
     )
   } else {
-    if (typeof $color === 'string') {
-      if (selectedColor !== '') {
-        css.push(`color:${selectedColor};`)
-      }
+    if (typeof $color === 'string') {      
+      css.push(
+        generateColor($color, theme)
+      )
     }
   }
   if (isArray($bgColor)) {
@@ -41,9 +38,9 @@ export function color({ $color, $bgColor, theme }: ColorProps) {
     )
   } else {
     if (typeof $bgColor === 'string') {
-      if (selectedBgColor !== '') {
-        css.push(`background-color:${selectedBgColor};`)
-      }
+      css.push(
+        generateBackgroundColor($bgColor, theme)
+      )
     }
   }
 

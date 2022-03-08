@@ -5,9 +5,9 @@ export function findColorValue(value, theme) {
 }
 
 export function generateBackgroundColor(value, theme) {
-  return `background-color:${findColorValue(value, theme)}`
+  return `background-color:${findColorValue(value, theme)};`
 }
 
 export function generateColor(value, theme) {
-  return `color:${findColorValue(value, theme)}`
+  return `color:${findColorValue(value, theme)};`
 }
