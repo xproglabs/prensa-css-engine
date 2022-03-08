@@ -62,7 +62,7 @@ describe('border styled function', () => {
         theme
       })
     ).toBe(
-      'border-color:#000000;border-style:dotted;border-top-width:1px;@media(min-width:1016px){border-top-width:2px;}'
+      'border-color:#000000;border-style:dotted;border-top-width:1px;@media(min-width:460px){border-top-width:1px;}@media(min-width:1016px){border-top-width:2px;}'
     )
   })
   test('b responsive', () => {
@@ -74,7 +74,19 @@ describe('border styled function', () => {
         theme
       })
     ).toBe(
-      'border-color:#000000;border-style:dotted;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;@media(min-width:1016px){border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;}'
+      'border-color:#000000;border-style:dotted;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;@media(min-width:460px){border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;}@media(min-width:1016px){border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;}'
+    )
+  })
+  test('b responsive model 3', () => {
+    expect(
+      border({
+        b: ['1px', '2px', '3px'],
+        borderColor: 'black',
+        borderStyle: 'dotted',
+        theme
+      })
+    ).toBe(
+      'border-color:#000000;border-style:dotted;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;@media(min-width:460px){border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;}@media(min-width:768px){border-top-width:2px;border-right-width:2px;border-bottom-width:2px;border-left-width:2px;}@media(min-width:1016px){border-top-width:3px;border-right-width:3px;border-bottom-width:3px;border-left-width:3px;}'
     )
   })
 })

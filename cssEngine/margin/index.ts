@@ -1,4 +1,5 @@
 import { MarginProps } from '@xprog/prensa-css-engine/props'
+import get from 'lodash/get'
 
 import { generateMT, generateMR, generateMB, generateML, generateMX, generateMY, generateM } from './parsers'
 import { marginResponsive } from './responsive'
@@ -17,7 +18,7 @@ export function margin(props: MarginProps) {
   if (!props) return ''
 
   const { mt, mr, mb, ml, mx, my, m, theme }: MarginProps = props
-  const factor = theme.factors.margin
+  const factor = get(theme, 'factors.margin', 1)
   const styles = []
 
   if (mt) styles.push( generateMT(mt, factor) )
@@ -41,5 +42,5 @@ export function margin(props: MarginProps) {
     )
   )
 
-  return styles.join('')
+  return styles.join('').replace(/\s+/g, '')
 }

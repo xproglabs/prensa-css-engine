@@ -29,14 +29,25 @@ describe('radius styled function', () => {
     )
   })
 
-  test('radius responsive', () => {
+  test('radius responsive model 3', () => {
     expect(
       radius({
-        $radius: 'alternative',
+        $radius: ['alternative', 'circle'],
         theme
       })
     ).toBe(
-      'border-radius:5px;'
+      'border-radius:5px;@media(min-width:460px){border-radius:5px;}@media(min-width:1016px){border-radius:50%;}'
+    )
+  })
+
+  test('radius responsive model 3', () => {
+    expect(
+      radius({
+        $radius: ['alternative', 'circle', 'unset'],
+        theme
+      })
+    ).toBe(
+      'border-radius:5px;@media(min-width:460px){border-radius:5px;}@media(min-width:768px){border-radius:50%;}@media(min-width:1016px){border-radius:0px;}'
     )
   })
 })

@@ -1,7 +1,9 @@
 import { WidthProps } from '@xprog/prensa-css-engine/props'
+import get from 'lodash/get'
+import isArray from 'lodash/isArray'
 
+import { createResponsiveStyle } from '../responsiveEngine'
 import { generateWidth } from './parsers'
-import { widthResponsive } from './responsive'
 
 /**
  * Prensa Styled System | width
@@ -14,17 +16,22 @@ export function width(props: WidthProps) {
   if (!props) return ''
 
   const { $width, theme }: WidthProps = props
-  const factor = theme.factors.dimensions
+  const factor = get(theme, 'factors.dimensions', 1)
   const styles = []
 
-  if ($width) styles.push( generateWidth($width, factor) )
-
-  styles.push(
-    widthResponsive(
-      $width,
-      theme
+  if (isArray($width)) {
+    styles.push(
+      createResponsiveStyle(
+        $width,
+        pos => generateWidth($width[pos], factor),
+        theme
+      )
     )
-  )
+  } else {
+    styles.push(
+      generateWidth($width, factor)
+    )
+  }
 
   return styles.join('')
 }

@@ -1,42 +1,109 @@
 import get from 'lodash/get'
 
-import { Param0, Param1 } from './types'
+import newMediaQuerie from './mediaquerie'
 
-export function responsiveEngine(value: Param0, theme: Param1, parsers) {
+export function createResponsiveStyle(value, parser, theme) {
 
-  const stringParser = get(parsers, 'string', null)
-  const numberParser = get(parsers, 'number', null)
-  const queries: any = get(theme, 'queries', {})
-  const css = []
+  const queries = get(theme, 'queries', {})
+  const responsiveModel = value.length
+  const styles = []
+  const xs = []
+  const sm = []
+  const md = []
+  const lg = []
+  const xl = []
 
-  function generateNewCssValue(value) {
-    if (typeof value === 'string') return stringParser(value)
-    if (typeof value === 'number') return numberParser(value)
+  styles.push(
+    parser(0)
+  )
+
+  if (responsiveModel === 1) {
+    xs.push(
+      parser(0)
+    )
   }
-
-  function generateNewCss(value, querie) {
-    return `
-      @media(min-width: ${querie}) {
-        ${typeof value === 'string' ? stringParser(value) : ''}
-        ${typeof value === 'number' ? numberParser(value) : ''}
-      }
-    `
+  if (responsiveModel === 2) {
+    sm.push(
+      parser(0)
+    )
+    lg.push(
+      parser(1)
+    )
   }
-
-  if (value.length == 2) {
-    css.push(
-      generateNewCssValue(value[0]),
-      generateNewCss(value[1], queries.lg)
+  if (responsiveModel === 3) {
+    sm.push(
+      parser(0)
+    )
+    md.push(
+      parser(1)
+    )
+    lg.push(
+      parser(2)
+    )
+  }
+  if (responsiveModel === 4) {
+    xs.push(
+      parser(0)
+    )
+    sm.push(
+      parser(1)
+    )
+    md.push(
+      parser(2)
+    )
+    lg.push(
+      parser(3)
+    )
+  }
+  if (responsiveModel === 5) {
+    xs.push(
+      parser(0)
+    )
+    sm.push(
+      parser(1)
+    )
+    md.push(
+      parser(2)
+    )
+    lg.push(
+      parser(3)
+    )
+    xl.push(
+      parser(4)
     )
   }
 
-  if (value.length == 3) {
-    css.push(
-      generateNewCssValue(value[0]),
-      generateNewCss(value[1], queries.md),
-      generateNewCss(value[2], queries.lg)
+  styles.push(
+    newMediaQuerie(
+      xs.join(''),
+      queries.xs
     )
-  }
+  )
 
-  return css.join('').replace(/(\r\n|\n|\r)/gm, '').replace(/ /g, '')
+  styles.push(
+    newMediaQuerie(
+      sm.join(''),
+      queries.sm
+    )
+  )
+  styles.push(
+    newMediaQuerie(
+      md.join(''),
+      queries.md
+    )
+  )
+  styles.push(
+    newMediaQuerie(
+      lg.join(''),
+      queries.lg
+    )
+  )
+  styles.push(
+    newMediaQuerie(
+      xl.join(''),
+      queries.xl
+    )
+  )
+
+  return styles.join('')
 }

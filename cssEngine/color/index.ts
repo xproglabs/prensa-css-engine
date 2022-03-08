@@ -1,7 +1,8 @@
 import { ColorProps } from '@xprog/prensa-css-engine/props'
-import get from 'lodash/get'
+import isArray from 'lodash/isArray'
 
-import { colorResponsive } from './responsive'
+import { createResponsiveStyle } from '../responsiveEngine'
+import { generateBackgroundColor, generateColor } from './parsers'
 
 /**
  * Prensa Styled System | color
@@ -11,28 +12,37 @@ import { colorResponsive } from './responsive'
 export function color({ $color, $bgColor, theme }: ColorProps) {
 
   const css = []
-  const selectedColor = get(theme, `colors.${$color}`, '')
-  const selectedBgColor = get(theme, `colors.${$bgColor}`, '')
 
-  if (typeof $color === 'string') {
-    if (selectedColor !== '') {
-      css.push(`color:${selectedColor};`)
-    }
-  }
-
-  if (typeof $bgColor === 'string') {
-    if (selectedBgColor !== '') {
-      css.push(`background-color:${selectedBgColor};`)
-    }
-  }
-
-  css.push(
-    colorResponsive(
-      $color,
-      $bgColor,
-      theme
+  if (isArray($color)) {
+    css.push(
+      createResponsiveStyle(
+        $color,
+        pos => generateColor($color[pos], theme),
+        theme
+      )
     )
-  )
+  } else {
+    if (typeof $color === 'string') {      
+      css.push(
+        generateColor($color, theme)
+      )
+    }
+  }
+  if (isArray($bgColor)) {
+    css.push(
+      createResponsiveStyle(
+        $bgColor,
+        pos => generateBackgroundColor($bgColor[pos], theme),
+        theme
+      )
+    )
+  } else {
+    if (typeof $bgColor === 'string') {
+      css.push(
+        generateBackgroundColor($bgColor, theme)
+      )
+    }
+  }
 
   return css.join('')
 }

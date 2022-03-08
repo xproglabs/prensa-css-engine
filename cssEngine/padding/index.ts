@@ -1,4 +1,5 @@
 import { PaddingProps } from '@xprog/prensa-css-engine/props'
+import get from 'lodash/get'
 
 import { generatePT, generatePR, generatePB, generatePL, generatePX, generatePY, generateP } from './parsers'
 import { paddingResponsive } from './responsive'
@@ -17,7 +18,7 @@ export function padding(props: PaddingProps) {
   if (!props) return ''
 
   const { pt, pr, pb, pl, px, py, p, theme }: PaddingProps = props
-  const factor = theme.factors.margin
+  const factor = get(theme, 'factors.padding', 1)
   const styles = []
 
   if (pt) styles.push( generatePT(pt, factor) )
@@ -41,5 +42,5 @@ export function padding(props: PaddingProps) {
     )
   )
 
-  return styles.join('')
+  return styles.join('').replace(/\s+/g, '')
 }

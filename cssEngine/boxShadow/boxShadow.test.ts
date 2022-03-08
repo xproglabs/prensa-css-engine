@@ -38,7 +38,7 @@ describe('boxShadow styled function', () => {
         theme
       })
     ).toBe(
-      'box-shadow:2.5px2.5px5pxrgba(0,0,0,0.1);@media(min-width:1016px){box-shadow:5px5px10pxrgba(0,0,0,0.1);}'
+      'box-shadow:2.5px2.5px5pxrgba(0,0,0,0.1);@media(min-width:460px){box-shadow:2.5px2.5px5pxrgba(0,0,0,0.1);}@media(min-width:1016px){box-shadow:5px5px10pxrgba(0,0,0,0.1);}'
     )
   })
 })

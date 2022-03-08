@@ -45,7 +45,7 @@ describe('color styled function', () => {
         theme
       })
     ).toBe(
-      'background-color:#000000;@media(min-width:1016px){background-color:#FFFFFF;}'
+      'background-color:#000000;@media(min-width:460px){background-color:#000000;}@media(min-width:1016px){background-color:#FFFFFF;}'
     )
   })
   test('bgColor responsive (mobile/tablet/desktop) ', () => {
@@ -55,7 +55,7 @@ describe('color styled function', () => {
         theme
       })
     ).toBe(
-      'background-color:#000000;@media(min-width:768px){background-color:#FFFFFF;}@media(min-width:1016px){background-color:#151515;}'
+      'background-color:#000000;@media(min-width:460px){background-color:#000000;}@media(min-width:768px){background-color:#FFFFFF;}@media(min-width:1016px){background-color:#151515;}'
     )
   })
 })
