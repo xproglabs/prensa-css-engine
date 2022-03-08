@@ -1,3 +1,30 @@
+## [1.0.28](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.27...v1.0.28) (2022-03-08)
+
+
+### Bug Fixes
+
+* Ajustes finos na geração do css em color ([6f3745e](https://github.com/xproglabs/prensa-css-engine/commit/6f3745e441c0f87c2f2707fb85fd039b032a4f61))
+* Altera parâmetro em função parser no width e height ([4d2153f](https://github.com/xproglabs/prensa-css-engine/commit/4d2153f958e7d43b167047623fa09c3cbc994901))
+* Atualiza modelo responsivo na função boxShadow ([68038bc](https://github.com/xproglabs/prensa-css-engine/commit/68038bc0ae76669b076c9da8b55e05193233c808))
+* Atualiza testes com novo responsivo e sem espaços ([a632aa7](https://github.com/xproglabs/prensa-css-engine/commit/a632aa77eaf6becd4958b7e31e5307343d2113ad))
+* Atualiza testes responsivos ([cff50ea](https://github.com/xproglabs/prensa-css-engine/commit/cff50eac2df2af1ef023d2fc924245417ef23f8c))
+* Implementa nova função createResponsive no align ([7bd729d](https://github.com/xproglabs/prensa-css-engine/commit/7bd729d039df8549a49b03b95842bade8da54ba5))
+* Implementa nova função responsiva na função height ([2f370c9](https://github.com/xproglabs/prensa-css-engine/commit/2f370c9b61be74483e14d95cd0b7dfcae22e5e58))
+* Implementa nova função responsiva na função width ([78d812b](https://github.com/xproglabs/prensa-css-engine/commit/78d812b2a31c26f28a77c6a24c0713262b17d688))
+* Implementa nova função responsiva no radius ([257432d](https://github.com/xproglabs/prensa-css-engine/commit/257432db693250e56e70e1eb5e6b587ea30ca9c1))
+* Implementa novo responsivo na função margin ([21e4131](https://github.com/xproglabs/prensa-css-engine/commit/21e41315c245878283fdef8886a0b8ad90436046))
+* Implementa novo responsivo no padding ([b5bff87](https://github.com/xproglabs/prensa-css-engine/commit/b5bff8768af9e53ac72f0ef015e7f0aaa7486f43))
+* Novo modelo responsivo na função maxAndMin ([aa694c9](https://github.com/xproglabs/prensa-css-engine/commit/aa694c9daf9e9292a92bb6f5cf9240b8a6e7e974))
+* Remove espaços no parser generateWidth ([4acfcca](https://github.com/xproglabs/prensa-css-engine/commit/4acfcca9a0e2509127a651096ff4e1ee65ad2571))
+
+
+### Features
+
+* Altera parâmetro da função parser em createResponsiveStyle ([cb180c9](https://github.com/xproglabs/prensa-css-engine/commit/cb180c90d2d4f504349dfb469269eb8e70428132))
+* Aplica modelo responsivo 4 e 5 no border ([f0041ad](https://github.com/xproglabs/prensa-css-engine/commit/f0041ad42f1eff5e3830d9954611ddb00eb57877))
+* Implementa nova função responsiva em color ([1439d22](https://github.com/xproglabs/prensa-css-engine/commit/1439d228580f48bb071a8d29c7c984bb3dd8fb26))
+* Nova função createResponsiveStyle ([0a544ff](https://github.com/xproglabs/prensa-css-engine/commit/0a544fff721f9875a9d0f6d25b0177260d4f9c0b))
+
 ## [1.0.27](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.26...v1.0.27) (2022-02-19)
 
 
