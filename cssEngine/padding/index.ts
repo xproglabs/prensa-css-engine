@@ -21,13 +21,13 @@ export function padding(props: PaddingProps) {
   const factor = get(theme, 'factors.padding', 1)
   const styles = []
 
-  if (pt) styles.push( generatePT(pt, factor) )
-  if (pr) styles.push( generatePR(pr, factor) )
-  if (pb) styles.push( generatePB(pb, factor) )
-  if (pl) styles.push( generatePL(pl, factor) )
-  if (px) styles.push( generatePX(px, factor) )
-  if (py) styles.push( generatePY(py, factor) )
-  if (p) styles.push( generateP(p, factor) )
+  if (pt !== undefined) styles.push( generatePT(pt, factor) )
+  if (pr !== undefined) styles.push( generatePR(pr, factor) )
+  if (pb !== undefined) styles.push( generatePB(pb, factor) )
+  if (pl !== undefined) styles.push( generatePL(pl, factor) )
+  if (px !== undefined) styles.push( generatePX(px, factor) )
+  if (py !== undefined) styles.push( generatePY(py, factor) )
+  if (p !== undefined) styles.push( generateP(p, factor) )
 
   styles.push(
     paddingResponsive(

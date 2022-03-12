@@ -1,25 +1,25 @@
 export function generatePT(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `padding-top: ${value};`
   if (typeof value === 'number') return `padding-top: ${value * factor}px;`
 }
 export function generatePR(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `padding-right: ${value};`
   if (typeof value === 'number') return `padding-right: ${value * factor}px;`
 }
 export function generatePB(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `padding-bottom: ${value};`
   if (typeof value === 'number') return `padding-bottom: ${value * factor}px;`
 }
 export function generatePL(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `padding-left: ${value};`
   if (typeof value === 'number') return `padding-left: ${value * factor}px;`
 }
 export function generatePX(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `
     padding-left: ${value};
     padding-right: ${value};
@@ -30,7 +30,7 @@ export function generatePX(value, factor) {
   `
 }
 export function generatePY(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `
     padding-top: ${value};
     padding-bottom: ${value};
@@ -41,7 +41,7 @@ export function generatePY(value, factor) {
   `
 }
 export function generateP(value, factor) {
-  if (!value) return ''
+  if (value === undefined) return ''
   if (typeof value === 'string') return `
     padding-top: ${value};
     padding-right: ${value};

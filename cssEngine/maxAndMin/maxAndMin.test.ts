@@ -27,7 +27,18 @@ describe('maxAndMin styled function', () => {
         theme
       })
     ).toBe(
-      'max-height:500px;'
+      'max-height: 500px;'
+    )
+  })
+
+  test('maxHeight using calc', () => {
+    expect(
+      maxAndMin({
+        maxHeight: 'calc(72px - 32px)',
+        theme
+      })
+    ).toBe(
+      'max-height: calc(72px - 32px);'
     )
   })
 
@@ -38,7 +49,7 @@ describe('maxAndMin styled function', () => {
         theme
       })
     ).toBe(
-      'max-height:250px;@media(min-width:460px){max-height:250px;}@media(min-width:1016px){max-height:500px;}'
+      'max-height: 250px;@media(min-width:460px){max-height: 250px;}@media(min-width:1016px){max-height: 500px;}'
     )
   })
 
@@ -50,7 +61,7 @@ describe('maxAndMin styled function', () => {
         theme
       })
     ).toBe(
-      'max-height:250px;max-width:150px;@media(min-width:460px){max-height:250px;max-width:150px;}@media(min-width:768px){max-width:500px;}@media(min-width:1016px){max-height:500px;max-width:100vw;}'
+      'max-height: 250px;max-width: 150px;@media(min-width:460px){max-height: 250px;max-width: 150px;}@media(min-width:768px){max-width: 500px;}@media(min-width:1016px){max-height: 500px;max-width: 100vw;}'
     )
   })
 

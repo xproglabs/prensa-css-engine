@@ -27,16 +27,26 @@ describe('padding styled function', () => {
     )
   })
 
-  test('padding', () => {
+  test('zero number', () => {
     expect(
       padding({
-        px: '100px',
-        theme
+        p: 0,
       })
     ).toBe(
-      'padding-left:100px;padding-right:100px;'
+      'padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'
     )
   })
+
+  test('zero string', () => {
+    expect(
+      padding({
+        p: '0px',
+      })
+    ).toBe(
+      'padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'
+    )
+  })
+
   test('padding responsive model 3', () => {
     expect(
       padding({
@@ -47,6 +57,7 @@ describe('padding styled function', () => {
       'padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;@media(min-width:460px){padding-top:8px;padding-right:8px;padding-bottom:8px;padding-left:8px;}@media(min-width:768px){padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px;}@media(min-width:1016px){padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;}'
     )
   })
+
   test('padding-top + padding-left responsive model 4', () => {
     expect(
       padding({

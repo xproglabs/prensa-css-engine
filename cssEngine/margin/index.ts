@@ -21,13 +21,13 @@ export function margin(props: MarginProps) {
   const factor = get(theme, 'factors.margin', 1)
   const styles = []
 
-  if (mt) styles.push( generateMT(mt, factor) )
-  if (mr) styles.push( generateMR(mr, factor) )
-  if (mb) styles.push( generateMB(mb, factor) )
-  if (ml) styles.push( generateML(ml, factor) )
-  if (mx) styles.push( generateMX(mx, factor) )
-  if (my) styles.push( generateMY(my, factor) )
-  if (m) styles.push( generateM(m, factor) )
+  if (mt !== undefined) styles.push( generateMT(mt, factor) )
+  if (mr !== undefined) styles.push( generateMR(mr, factor) )
+  if (mb !== undefined) styles.push( generateMB(mb, factor) )
+  if (ml !== undefined) styles.push( generateML(ml, factor) )
+  if (mx !== undefined) styles.push( generateMX(mx, factor) )
+  if (my !== undefined) styles.push( generateMY(my, factor) )
+  if (m !== undefined) styles.push( generateM(m, factor) )
 
   styles.push(
     marginResponsive(
