@@ -1,3 +1,12 @@
+## [1.0.29](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.28...v1.0.29) (2022-03-12)
+
+
+### Bug Fixes
+
+* Permite zero number como valor na função margin ([a2c8839](https://github.com/xproglabs/prensa-css-engine/commit/a2c88394e614747a65afcc357805cc5c4d35de0d))
+* Permite zero number como valor na função padding ([5555834](https://github.com/xproglabs/prensa-css-engine/commit/55558341503242bfac1d58c84ab03d44fe910966))
+* Remove replace de espaçamentos prejudicial para calc e adiciona teste com calc ([d39cfff](https://github.com/xproglabs/prensa-css-engine/commit/d39cfff4ca91c30b96af22657ab3406a57402c29))
+
 ## [1.0.28](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.27...v1.0.28) (2022-03-08)
 
 
