@@ -1,3 +1,11 @@
+## [1.0.30](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.29...v1.0.30) (2022-03-12)
+
+
+### Features
+
+* Adiciona arquivo de testes no customCSS ([398d698](https://github.com/xproglabs/prensa-css-engine/commit/398d698a55a90702dc9f92f77d2da37e61852ac9))
+* Permite estilo responsivo na função customCSS ([2a5b7c2](https://github.com/xproglabs/prensa-css-engine/commit/2a5b7c266e3ba5c2a58999997e847db34ddd44d6))
+
 ## [1.0.29](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.28...v1.0.29) (2022-03-12)
 
 
