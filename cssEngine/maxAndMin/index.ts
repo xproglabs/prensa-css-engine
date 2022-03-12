@@ -36,5 +36,5 @@ export function maxAndMin(props: MaxAndMinProps) {
     )
   )
 
-  return styles.join('').replace(/\s+/g, '')
+  return styles.join('')
 }
