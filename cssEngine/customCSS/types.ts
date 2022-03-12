@@ -1,1 +1,1 @@
-export type CustomCSSTypes = string
+export type CustomCSSTypes = string | Array<string>
