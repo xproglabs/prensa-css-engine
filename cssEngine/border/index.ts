@@ -39,7 +39,7 @@ export function border(props: BorderProps) {
     bx,
     by,
     borderColor,
-    borderStyle,
+    borderStyle = 'solid',
     theme
   } = props
 
