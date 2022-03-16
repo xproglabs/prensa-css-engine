@@ -1,0 +1,1 @@
+export type BorderStyleTypes = string | Array<string>;

@@ -1,5 +1,7 @@
 export { align } from './align'
 export { boxShadow } from './boxShadow'
+export { border } from './border'
+export { borderStyle } from './border/borderStyle'
 export { color } from './color'
 export { customCSS } from './customCSS'
 export { height } from './height'
