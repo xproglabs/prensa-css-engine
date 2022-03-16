@@ -1,3 +1,16 @@
+## [1.0.31](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.30...v1.0.31) (2022-03-16)
+
+
+### Bug Fixes
+
+* Adiciona valor default solid para borderStyle ([1ccd5a0](https://github.com/xproglabs/prensa-css-engine/commit/1ccd5a0f9a921c583143722ddb0fd60bf4e91a7f))
+* Remove borderStyle da função border ([b379972](https://github.com/xproglabs/prensa-css-engine/commit/b37997274bff9a7fc5cdefc409fcd73ceca4ab8b))
+
+
+### Features
+
+* Nova função borderStyle ([a7ab749](https://github.com/xproglabs/prensa-css-engine/commit/a7ab749a312224c8228a8b777912649d87427d0c))
+
 ## [1.0.30](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.29...v1.0.30) (2022-03-12)
 
 
