@@ -9,6 +9,5 @@ export interface BorderProps {
   by?: BorderTypes;
   b?: BorderTypes;
   borderColor?: ColorTypes;
-  borderStyle?: string;
   theme?: ThemeTypes;
 }
