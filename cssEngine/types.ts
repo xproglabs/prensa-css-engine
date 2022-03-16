@@ -1,6 +1,6 @@
 export * from './align/types'
 export * from './border/types'
-export * from './border/borderStyle/types'
+export * from './borderStyle/types'
 export * from './boxShadow/types'
 export * from './color/types'
 export * from './customCSS/types'

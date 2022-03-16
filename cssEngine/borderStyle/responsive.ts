@@ -1,7 +1,7 @@
 import get from 'lodash/get'
 import isArray from 'lodash/isArray'
 
-import newMediaQuerie from '../../responsiveEngine/mediaquerie'
+import newMediaQuerie from '../responsiveEngine/mediaquerie'
 import { generateBST, generateBSR, generateBSB, generateBSL, generateBSX, generateBSY, generateBS, generateBorderStyle } from './parsers'
 
 export function borderResponsive(bst, bsr, bsb, bsl, bsx, bsy, bs, borderStyle, theme) {
