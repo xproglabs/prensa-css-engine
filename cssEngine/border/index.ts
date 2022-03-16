@@ -10,7 +10,6 @@ import {
   generateBX,
   generateBY,
   generateBorderColor,
-  generateBorderStyle
 } from './parsers'
 import { borderResponsive } from './responsive'
 
@@ -39,7 +38,6 @@ export function border(props: BorderProps) {
     bx,
     by,
     borderColor,
-    borderStyle,
     theme
   } = props
 
@@ -54,7 +52,6 @@ export function border(props: BorderProps) {
   if (by) styles.push(generateBY(by, factor))
   if (b) styles.push(generateB(b, factor))
   if (borderColor) styles.push(generateBorderColor(borderColor, theme))
-  if (borderStyle) styles.push(generateBorderStyle(borderStyle))
 
   styles.push(
     borderResponsive(
