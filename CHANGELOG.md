@@ -1,3 +1,11 @@
+## [1.0.32](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.31...v1.0.32) (2022-03-16)
+
+
+### Bug Fixes
+
+* Move borderStyle para fora do diretório border ([61720b8](https://github.com/xproglabs/prensa-css-engine/commit/61720b81ed6454a5ede811e55bd723690e8be8bd))
+* Remove prop borderStyle da interface BorderProps ([3bd63a9](https://github.com/xproglabs/prensa-css-engine/commit/3bd63a9947abbdc325d020d6023533a316c1f31c))
+
 ## [1.0.31](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.30...v1.0.31) (2022-03-16)
 
 
