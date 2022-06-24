@@ -1,0 +1,1 @@
+export type FontFamilyTypes = string | number | Array<string | number>;
