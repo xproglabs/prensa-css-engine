@@ -1,0 +1,1 @@
+export type FontWeightTypes = number | Array<number>;
