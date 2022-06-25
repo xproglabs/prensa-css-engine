@@ -13,6 +13,7 @@ export * from './margin/types'
 export * from './maxAndMin/types'
 export * from './padding/types'
 export * from './radius/types'
+export * from './textAlign/types'
 export * from './width/types'
 
 export type ThemeTypes = {
