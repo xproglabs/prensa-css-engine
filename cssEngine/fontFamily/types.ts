@@ -1,1 +1,3 @@
-export type FontFamilyTypes = string | number | Array<string | number>;
+import { FontTokens } from '@prensa_tokens'
+
+export type FontFamilyTypes = FontTokens;
