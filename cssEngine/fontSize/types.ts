@@ -1,0 +1,1 @@
+export type FontSizeTypes = string | number | Array<string | number>;
