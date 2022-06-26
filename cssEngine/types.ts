@@ -15,6 +15,7 @@ export * from './padding/types'
 export * from './radius/types'
 export * from './textAlign/types'
 export * from './textDecoration/types'
+export * from './textShadow/types'
 export * from './textTransform/types'
 export * from './width/types'
 
