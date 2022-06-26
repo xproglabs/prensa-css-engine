@@ -1,3 +1,21 @@
+## [1.0.33](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.32...v1.0.33) (2022-06-26)
+
+
+### Features
+
+* Adiciona CSSType como dependência ([3b6a757](https://github.com/xproglabs/prensa-css-engine/commit/3b6a757bc57840e3d38ab245242503c4fe1191f7))
+* Cria função fontFamily ([88e8685](https://github.com/xproglabs/prensa-css-engine/commit/88e86853e917fcc499305f13714a781eb69e927b))
+* Nova função fontSize ([529a872](https://github.com/xproglabs/prensa-css-engine/commit/529a872a17d1e9b8cbc0a252ef22c3a85ffce503))
+* Nova função fontStyle ([88cf837](https://github.com/xproglabs/prensa-css-engine/commit/88cf8375f4b0930c9f1bfd98c0964a30b8f6743f))
+* Nova função fontWeight ([02b3f52](https://github.com/xproglabs/prensa-css-engine/commit/02b3f5217091c05e9a35a2a6ddcb54925c7c2dcd))
+* Nova função letterSpacing ([17bae43](https://github.com/xproglabs/prensa-css-engine/commit/17bae434e9b70d2b683cf7e74487229f5697e7f0))
+* Nova função lineHeight ([d58132d](https://github.com/xproglabs/prensa-css-engine/commit/d58132d1efdafe7b79ea5fed4fc98aa4a0211ff6))
+* Nova função opacity ([ec601d2](https://github.com/xproglabs/prensa-css-engine/commit/ec601d2f4016d548eb534ac4dd4cca2cd20faf9b))
+* Nova função textAlign ([80cc789](https://github.com/xproglabs/prensa-css-engine/commit/80cc78932caec081067e6df5f4881a493fe0be3e))
+* Nova função textDecoration ([f80299d](https://github.com/xproglabs/prensa-css-engine/commit/f80299d6cb24ec05df68192ddb0339213e75b4cd))
+* Nova função textShadow ([8469c91](https://github.com/xproglabs/prensa-css-engine/commit/8469c91725781fe01f3ce075b1c24cef9d098787))
+* Nova função textTransform ([f00e400](https://github.com/xproglabs/prensa-css-engine/commit/f00e400247720ec809075318ce57b747e27c18c1))
+
 ## [1.0.32](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.31...v1.0.32) (2022-03-16)
 
 
