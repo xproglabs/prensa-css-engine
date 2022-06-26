@@ -1,3 +1,10 @@
+## [1.0.34](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.33...v1.0.34) (2022-06-26)
+
+
+### Features
+
+* Adiciona novas funções no arquivo de saída principal ([db698ab](https://github.com/xproglabs/prensa-css-engine/commit/db698ab147844bb2e29d2e46a4b7914df8f895b4))
+
 ## [1.0.33](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.32...v1.0.33) (2022-06-26)
 
 

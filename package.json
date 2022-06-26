@@ -1,6 +1,6 @@
 {
   "name": "@xprog/prensa-css-engine",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Functions for transforming component props to CSS",
   "main": "cssEngine/index.ts",
   "author": "xprog",
