@@ -1,3 +1,11 @@
+## [1.0.37](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.36...v1.0.37) (2022-06-27)
+
+
+### Features
+
+* Adiciona export JS para o componente opacity ([eff29c3](https://github.com/xproglabs/prensa-css-engine/commit/eff29c3dfffbcde2dd19656e497782a7944edef1))
+* Define itinerant props em algumas funções ([8b409a0](https://github.com/xproglabs/prensa-css-engine/commit/8b409a0017e859e87cb496aa6e8829f6a31da10d))
+
 ## [1.0.34](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.33...v1.0.34) (2022-06-26)
 
 
