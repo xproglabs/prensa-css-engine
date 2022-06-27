@@ -7,7 +7,6 @@ import { generateOpacity } from './parsers'
 /**
  * Prensa Styled System | opacity
  * @param props Expect an object matching OpacityProps interface
- * $opacity: string;
  * @returns a string with CSS syntax
  */
 export function opacity({ $opacity, theme }: OpacityProps) {
