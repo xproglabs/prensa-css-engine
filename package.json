@@ -1,6 +1,6 @@
 {
   "name": "@xprog/prensa-css-engine",
-  "version": "1.0.32",
+  "version": "1.0.34",
   "description": "Functions for transforming component props to CSS",
   "main": "cssEngine/index.ts",
   "author": "xprog",
@@ -53,11 +53,12 @@
     "eslint": "eslint --ext js,ts,tsx ./",
     "eslint:fix": "eslint --fix --ext js,ts,tsx ./",
     "build": "rm -rf dist && rollup --config",
-    "prerelease:copyfiles": "cp -rf README.md dist && cp -rf CHANGELOG.md dist && cp -rf package.json dist",
+    "prerelease:copyfiles": "cp -rf README.md dist && cp -rf CHANGELOG.md dist && cp -rf package.json dist && cp -rf .npmignore dist",
     "postrelease:copyfiles": "cp -rf dist/package.json . && cp -rf dist/CHANGELOG.md .",
     "release:local": "npm run build && npm run prerelease:copyfiles && cd dist && npm pack",
     "cd": "npm run build && npm run prerelease:copyfiles",
-    "semantic-release": "cd dist && semantic-release"
+    "semantic-release": "cd dist && semantic-release",
+    "semantic-release-noci": "npm run cd && cd dist && semantic-release --no-ci"
   },
   "publishConfig": {
     "access": "public",
