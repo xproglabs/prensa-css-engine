@@ -14,7 +14,7 @@ describe('fontStyle styled function', () => {
   test('fontStyle', () => {
     expect(
       fontStyle({
-        fontStyle: 'italic',
+        $fontStyle: 'italic',
         theme
       })
     ).toBe(
@@ -25,7 +25,7 @@ describe('fontStyle styled function', () => {
   test('fontStyle responsive (mobile/desktop)', () => {
     expect(
       fontStyle({
-        fontStyle: ['oblique', 'italic'],
+        $fontStyle: ['oblique', 'italic'],
         theme
       })
     ).toBe(
@@ -35,7 +35,7 @@ describe('fontStyle styled function', () => {
   test('fontStyle responsive (mobile/tablet/desktop) ', () => {
     expect(
       fontStyle({
-        fontStyle: ['oblique', 'italic', 'normal'],
+        $fontStyle: ['oblique', 'italic', 'normal'],
         theme
       })
     ).toBe(

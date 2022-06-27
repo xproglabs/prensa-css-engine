@@ -26,7 +26,7 @@ describe('fontWeight styled function', () => {
   test('fontWeight', () => {
     expect(
       fontWeight({
-        fontWeight: 400,
+        $fontWeight: 400,
         theme
       })
     ).toBe(
@@ -37,7 +37,7 @@ describe('fontWeight styled function', () => {
   test('fontWeight responsive (mobile/desktop)', () => {
     expect(
       fontWeight({
-        fontWeight: [400, 700],
+        $fontWeight: [400, 700],
         theme
       })
     ).toBe(
@@ -47,7 +47,7 @@ describe('fontWeight styled function', () => {
   test('fontWeight responsive (mobile/tablet/desktop) ', () => {
     expect(
       fontWeight({
-        fontWeight: [400, 600, 700],
+        $fontWeight: [400, 600, 700],
         theme
       })
     ).toBe(
