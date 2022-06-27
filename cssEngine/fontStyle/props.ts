@@ -1,6 +1,6 @@
 import { FontStyleTypes, ThemeTypes } from '@xprog/prensa-css-engine/types'
 
 export interface FontStyleProps {
-  fontStyle: FontStyleTypes;
+  fontStyle?: FontStyleTypes;
   theme?: ThemeTypes;
 }
