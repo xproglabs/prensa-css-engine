@@ -9,21 +9,21 @@ import { generateTextDecoration } from './parsers'
  * @param props Expect an object matching TextDecorationProps interface
  * @returns a string with CSS syntax
  */
-export function textDecoration({ textDecoration, theme }: TextDecorationProps) {
+export function textDecoration({ $textDecoration, theme }: TextDecorationProps) {
 
   const css = []
 
-  if (isArray(textDecoration)) {
+  if (isArray($textDecoration)) {
     css.push(
       createResponsiveStyle(
-        textDecoration,
-        pos => generateTextDecoration(textDecoration[pos]),
+        $textDecoration,
+        pos => generateTextDecoration($textDecoration[pos]),
         theme
       )
     )
   } else {
     css.push(
-      generateTextDecoration(textDecoration)
+      generateTextDecoration($textDecoration)
     )
   }
 

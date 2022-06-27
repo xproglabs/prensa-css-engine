@@ -9,21 +9,21 @@ import { generateFontStyle } from './parsers'
  * @param props Expect an object matching FontStyleProps interface
  * @returns a string with CSS syntax
  */
-export function fontStyle({ fontStyle, theme }: FontStyleProps) {
+export function fontStyle({ $fontStyle, theme }: FontStyleProps) {
 
   const css = []
 
-  if (isArray(fontStyle)) {
+  if (isArray($fontStyle)) {
     css.push(
       createResponsiveStyle(
-        fontStyle,
-        pos => generateFontStyle(fontStyle[pos]),
+        $fontStyle,
+        pos => generateFontStyle($fontStyle[pos]),
         theme
       )
     )
   } else {
     css.push(
-      generateFontStyle(fontStyle)
+      generateFontStyle($fontStyle)
     )
   }
 

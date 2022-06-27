@@ -9,22 +9,22 @@ import { generateLetterSpacing } from './parsers'
  * @param props Expect an object matching LetterSpacingProps interface
  * @returns a string with CSS syntax
  */
-export function letterSpacing({ letterSpacing, theme }: LetterSpacingProps) {
+export function letterSpacing({ $letterSpacing, theme }: LetterSpacingProps) {
 
   const css = []
   const factor = theme.factors.letterSpacing
 
-  if (isArray(letterSpacing)) {
+  if (isArray($letterSpacing)) {
     css.push(
       createResponsiveStyle(
-        letterSpacing,
-        pos => generateLetterSpacing(letterSpacing[pos], factor),
+        $letterSpacing,
+        pos => generateLetterSpacing($letterSpacing[pos], factor),
         theme
       )
     )
   } else {
     css.push(
-      generateLetterSpacing(letterSpacing, factor)
+      generateLetterSpacing($letterSpacing, factor)
     )
   }
 
