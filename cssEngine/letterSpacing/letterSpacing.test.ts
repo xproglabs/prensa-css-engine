@@ -28,7 +28,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing-string', () => {
     expect(
       letterSpacing({
-        letterSpacing: '100%',
+        $letterSpacing: '100%',
         theme
       })
     ).toBe(
@@ -39,7 +39,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing-number', () => {
     expect(
       letterSpacing({
-        letterSpacing: 1,
+        $letterSpacing: 1,
         theme
       })
     ).toBe(
@@ -50,7 +50,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing responsive string (mobile/desktop)', () => {
     expect(
       letterSpacing({
-        letterSpacing: ['1px', '100%'],
+        $letterSpacing: ['1px', '100%'],
         theme
       })
     ).toBe(
@@ -60,7 +60,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing responsive string (mobile/tablet/desktop) ', () => {
     expect(
       letterSpacing({
-        letterSpacing: ['1px', '110%', '120%'],
+        $letterSpacing: ['1px', '110%', '120%'],
         theme
       })
     ).toBe(
@@ -71,7 +71,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing responsive number (mobile/desktop)', () => {
     expect(
       letterSpacing({
-        letterSpacing: [2, 3],
+        $letterSpacing: [2, 3],
         theme
       })
     ).toBe(
@@ -81,7 +81,7 @@ describe('letterSpacing styled function', () => {
   test('letterSpacing responsive number (mobile/tablet/desktop) ', () => {
     expect(
       letterSpacing({
-        letterSpacing: [2, 3, 4],
+        $letterSpacing: [2, 3, 4],
         theme
       })
     ).toBe(

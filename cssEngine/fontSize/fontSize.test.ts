@@ -26,7 +26,7 @@ describe('fontSize styled function', () => {
   test('fontSize-string', () => {
     expect(
       fontSize({
-        fontSize: '16px',
+        $fontSize: '16px',
         theme
       })
     ).toBe(
@@ -37,7 +37,7 @@ describe('fontSize styled function', () => {
   test('fontSize-number', () => {
     expect(
       fontSize({
-        fontSize: 2,
+        $fontSize: 2,
         theme
       })
     ).toBe(
@@ -48,7 +48,7 @@ describe('fontSize styled function', () => {
   test('fontSize responsive string (mobile/desktop)', () => {
     expect(
       fontSize({
-        fontSize: ['16px', '24px'],
+        $fontSize: ['16px', '24px'],
         theme
       })
     ).toBe(
@@ -58,7 +58,7 @@ describe('fontSize styled function', () => {
   test('fontSize responsive string (mobile/tablet/desktop) ', () => {
     expect(
       fontSize({
-        fontSize: ['16px', '24px', '32px'],
+        $fontSize: ['16px', '24px', '32px'],
         theme
       })
     ).toBe(
@@ -69,7 +69,7 @@ describe('fontSize styled function', () => {
   test('fontSize responsive number (mobile/desktop)', () => {
     expect(
       fontSize({
-        fontSize: [2, 3],
+        $fontSize: [2, 3],
         theme
       })
     ).toBe(
@@ -79,7 +79,7 @@ describe('fontSize styled function', () => {
   test('fontSize responsive number (mobile/tablet/desktop) ', () => {
     expect(
       fontSize({
-        fontSize: [2, 3, 4],
+        $fontSize: [2, 3, 4],
         theme
       })
     ).toBe(

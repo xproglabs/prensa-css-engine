@@ -26,7 +26,7 @@ describe('fontFamily styled function', () => {
   test('fontFamily', () => {
     expect(
       fontFamily({
-        fontFamily: 'primary',
+        $fontFamily: 'primary',
         theme
       })
     ).toBe(
@@ -37,7 +37,7 @@ describe('fontFamily styled function', () => {
   test('fontFamily responsive (mobile/desktop)', () => {
     expect(
       fontFamily({
-        fontFamily: ['primary', 'secondary'],
+        $fontFamily: ['primary', 'secondary'],
         theme
       })
     ).toBe(
@@ -47,7 +47,7 @@ describe('fontFamily styled function', () => {
   test('fontFamily responsive (mobile/tablet/desktop) ', () => {
     expect(
       fontFamily({
-        fontFamily: ['primary', 'secondary', 'primary'],
+        $fontFamily: ['primary', 'secondary', 'primary'],
         theme
       })
     ).toBe(

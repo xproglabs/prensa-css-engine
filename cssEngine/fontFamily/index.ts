@@ -9,22 +9,22 @@ import { generateFontFamily } from './parsers'
  * @param props Expect an object matching FontFamilyProps interface
  * @returns a string with CSS syntax
  */
-export function fontFamily({ fontFamily, theme }: FontFamilyProps) {
+export function fontFamily({ $fontFamily, theme }: FontFamilyProps) {
 
   const css = []
   const fonts = theme.fonts
 
-  if (isArray(fontFamily)) {
+  if (isArray($fontFamily)) {
     css.push(
       createResponsiveStyle(
-        fontFamily,
-        pos => generateFontFamily(fontFamily[pos], fonts),
+        $fontFamily,
+        pos => generateFontFamily($fontFamily[pos], fonts),
         theme
       )
     )
   } else {
     css.push(
-      generateFontFamily(fontFamily, fonts)
+      generateFontFamily($fontFamily, fonts)
     )
   }
 

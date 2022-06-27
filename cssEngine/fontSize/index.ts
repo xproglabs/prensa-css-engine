@@ -9,22 +9,22 @@ import { generateFontSize } from './parsers'
  * @param props Expect an object matching FontSizeProps interface
  * @returns a string with CSS syntax
  */
-export function fontSize({ fontSize, theme }: FontSizeProps) {
+export function fontSize({ $fontSize, theme }: FontSizeProps) {
 
   const css = []
   const factor = theme.factors.fontSize
 
-  if (isArray(fontSize)) {
+  if (isArray($fontSize)) {
     css.push(
       createResponsiveStyle(
-        fontSize,
-        pos => generateFontSize(fontSize[pos], factor),
+        $fontSize,
+        pos => generateFontSize($fontSize[pos], factor),
         theme
       )
     )
   } else {
     css.push(
-      generateFontSize(fontSize, factor)
+      generateFontSize($fontSize, factor)
     )
   }
 

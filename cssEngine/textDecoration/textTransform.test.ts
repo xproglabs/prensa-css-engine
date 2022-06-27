@@ -14,7 +14,7 @@ describe('textDecoration styled function', () => {
   test('textDecoration', () => {
     expect(
       textDecoration({
-        textDecoration: 'overline',
+        $textDecoration: 'overline',
         theme
       })
     ).toBe(
@@ -25,7 +25,7 @@ describe('textDecoration styled function', () => {
   test('textDecoration responsive (mobile/desktop)', () => {
     expect(
       textDecoration({
-        textDecoration: ['underline', 'overline'],
+        $textDecoration: ['underline', 'overline'],
         theme
       })
     ).toBe(
@@ -35,7 +35,7 @@ describe('textDecoration styled function', () => {
   test('textDecoration responsive (mobile/tablet/desktop) ', () => {
     expect(
       textDecoration({
-        textDecoration: ['underline', 'overline', 'underline'],
+        $textDecoration: ['underline', 'overline', 'underline'],
         theme
       })
     ).toBe(
