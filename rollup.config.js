@@ -16,6 +16,7 @@ export default [
   createBundle('cssEngine/lineHeight/index.ts', 'dist/lineHeight/index'),
   createBundle('cssEngine/margin/index.ts', 'dist/margin/index'),
   createBundle('cssEngine/maxAndMin/index.ts', 'dist/maxAndMin/index'),
+  createBundle('cssEngine/opacity/index.ts', 'dist/opacity/index'),
   createBundle('cssEngine/padding/index.ts', 'dist/padding/index'),
   createBundle('cssEngine/radius/index.ts', 'dist/radius/index'),
   createBundle('cssEngine/textAlign/index.ts', 'dist/textAlign/index'),
