@@ -1,6 +1,6 @@
 import { FontWeightTypes, ThemeTypes } from '@xprog/prensa-css-engine/types'
 
 export interface FontWeightProps {
-  fontWeight: FontWeightTypes;
+  fontWeight?: FontWeightTypes;
   theme?: ThemeTypes;
 }

@@ -1,6 +1,6 @@
 import { LetterSpacingTypes, ThemeTypes } from '@xprog/prensa-css-engine/types'
 
 export interface LetterSpacingProps {
-  letterSpacing: LetterSpacingTypes;
+  letterSpacing?: LetterSpacingTypes;
   theme?: ThemeTypes;
 }
