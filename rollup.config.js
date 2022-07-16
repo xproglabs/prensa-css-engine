@@ -23,5 +23,7 @@ export default [
   createBundle('cssEngine/textDecoration/index.ts', 'dist/textDecoration/index'),
   createBundle('cssEngine/textShadow/index.ts', 'dist/textShadow/index'),
   createBundle('cssEngine/textTransform/index.ts', 'dist/textTransform/index'),
-  createBundle('cssEngine/width/index.ts', 'dist/width/index')
+  createBundle('cssEngine/width/index.ts', 'dist/width/index'),
+  createBundle('cssEngine/margin/index.ts', 'dist/v2/margin/index'),
+  createBundle('cssEngine/padding/index.ts', 'dist/v2/padding/index')
 ]
