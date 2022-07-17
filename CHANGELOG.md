@@ -1,3 +1,10 @@
+## [1.0.38](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.37...v1.0.38) (2022-07-17)
+
+
+### Bug Fixes
+
+* adjust css-engine-v2 import in rollup ([c12ff93](https://github.com/xproglabs/prensa-css-engine/commit/c12ff931f13403305428f0773d5274525a131136))
+
 ## [1.0.37](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.36...v1.0.37) (2022-06-27)
 
 
