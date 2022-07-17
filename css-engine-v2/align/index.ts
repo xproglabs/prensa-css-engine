@@ -16,16 +16,16 @@ import { AlignValues, AlignXValues, AlignYValues } from './types'
 
   switch (align) {
     case 'row':
-      a = {flexDirection: 'row'}
+      a = { flexDirection: 'row' }
       break
     case 'row-reverse':
-      a = {flexDirection: 'row-reverse'}
+      a = { flexDirection: 'row-reverse' }
       break
     case 'column':
-      a = {flexDirection: 'column'}
+      a = { flexDirection: 'column' }
       break
     case 'column-reverse':
-      a = {flexDirection: 'column-reverse'}
+      a = { flexDirection: 'column-reverse' }
       break
   }
 
