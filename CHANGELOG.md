@@ -1,3 +1,16 @@
+## [1.0.39](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.38...v1.0.39) (2022-07-17)
+
+
+### Bug Fixes
+
+* adjust lint warning ([ab24b66](https://github.com/xproglabs/prensa-css-engine/commit/ab24b66b513abb55fe1948e84a5f54e25cc69e74))
+* resolve lint warning align/index ([0a81b9c](https://github.com/xproglabs/prensa-css-engine/commit/0a81b9c566ff736bc09dcda2b2201b12a8729c9d))
+
+
+### Features
+
+* add align parse method ([b06dbdd](https://github.com/xproglabs/prensa-css-engine/commit/b06dbdd72a254cf899362b3d7aac0597a62876a9))
+
 ## [1.0.38](https://github.com/xproglabs/prensa-css-engine/compare/v1.0.37...v1.0.38) (2022-07-17)
 
 
